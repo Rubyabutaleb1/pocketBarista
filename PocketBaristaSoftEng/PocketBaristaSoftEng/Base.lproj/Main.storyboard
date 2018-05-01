@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TheLightFont.otf">
+            <string>TheLightFont</string>
+        </array>
+        <array key="beyond_the_mountains.ttf">
+            <string>BeyondTheMountains</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="homeLogoImg" image="newPocketBarLogo" translatesAutoresizingMaskIntoConstraints="NO" id="r2N-bT-dGj">
+                                <rect key="frame" x="67" y="81" width="240" height="235"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sey-Qz-hKa" customClass="findMyDrinkBtn">
+                                <rect key="frame" x="89" y="366" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MmW-CD-HWa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="Find My Drink">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="findMyDrinkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CI0-9u-UF4"/>
+                                    <segue destination="eSP-3F-onx" kind="show" identifier="toFindDrinkView" id="EcP-eP-6RT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HW-ub-VbL">
+                                <rect key="frame" x="118" y="413" width="139" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FRm-ml-9Fm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="About us">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutUsBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGh-Pl-MnV"/>
+                                    <segue destination="8DO-xA-Bj5" kind="show" id="llp-49-HMs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sey-Qz-hKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="1mw-Fi-wZh"/>
+                            <constraint firstItem="r2N-bT-dGj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="8Jg-42-moV"/>
+                            <constraint firstItem="sey-Qz-hKa" firstAttribute="centerX" secondItem="1HW-ub-VbL" secondAttribute="centerX" id="JUb-51-Zwj"/>
+                            <constraint firstItem="r2N-bT-dGj" firstAttribute="centerX" secondItem="sey-Qz-hKa" secondAttribute="centerX" id="Jdh-RR-oPh"/>
+                            <constraint firstItem="1HW-ub-VbL" firstAttribute="top" secondItem="sey-Qz-hKa" secondAttribute="bottom" constant="17" id="LoH-4U-XXM"/>
+                            <constraint firstItem="r2N-bT-dGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="ReQ-IU-5f7"/>
+                            <constraint firstItem="r2N-bT-dGj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W6V-b2-VXe"/>
+                            <constraint firstItem="1HW-ub-VbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="e3a-hI-KiL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1HW-ub-VbL" secondAttribute="bottom" constant="224" id="hbx-0I-w5B"/>
+                            <constraint firstItem="sey-Qz-hKa" firstAttribute="top" secondItem="r2N-bT-dGj" secondAttribute="bottom" constant="50" id="muu-ej-sml"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeLogoImg" destination="r2N-bT-dGj" id="lAL-Sw-uj5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="31.934032983508249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Esb-nQ-bok">
+            <objects>
+                <viewController id="8DO-xA-Bj5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Q2-3d-NzK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="sSA-rn-BDW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWs-ux-qBq">
+                                <rect key="frame" x="115" y="111" width="186" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="yhz-u5-Phc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="54"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="qbC-mn-dT2">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="kEx-jf-dG9">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="t4M-Qa-GdJ">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="goo-MY-Dz4"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="Qc1-uq-TTA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="Kmm-tY-s2o">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="NE1-GZ-dpM" id="Qeo-Hw-UED"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v3S-DE-UtH">
+                                <rect key="frame" x="67" y="201" width="240" height="149"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="UAS-E2-9IX"/>
+                                </constraints>
+                                <string key="text">Ruby Abutaleb and Evan Purpura created this iOS application for CPSC 362. This application uses a database of hundreds of drinks with several different qualities to match a user with their perfect cup of coffee or tea.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sSA-rn-BDW" firstAttribute="leading" secondItem="6Q2-3d-NzK" secondAttribute="leading" id="96c-Oq-lp0"/>
+                            <constraint firstItem="sWs-ux-qBq" firstAttribute="leading" secondItem="a9K-MK-fs7" secondAttribute="leading" constant="115" id="BaB-3e-V2g"/>
+                            <constraint firstItem="sSA-rn-BDW" firstAttribute="bottom" secondItem="a9K-MK-fs7" secondAttribute="bottom" id="G2i-up-plM"/>
+                            <constraint firstItem="sSA-rn-BDW" firstAttribute="leading" secondItem="qbC-mn-dT2" secondAttribute="leading" id="Mlf-7F-rAw"/>
+                            <constraint firstItem="sSA-rn-BDW" firstAttribute="top" secondItem="6Q2-3d-NzK" secondAttribute="top" id="Pdv-oi-6Mr"/>
+                            <constraint firstItem="v3S-DE-UtH" firstAttribute="top" secondItem="sWs-ux-qBq" secondAttribute="bottom" constant="8" symbolic="YES" id="aAS-nq-UBy"/>
+                            <constraint firstItem="v3S-DE-UtH" firstAttribute="centerX" secondItem="qbC-mn-dT2" secondAttribute="centerX" id="eC6-Vi-MYf"/>
+                            <constraint firstItem="a9K-MK-fs7" firstAttribute="trailing" secondItem="sWs-ux-qBq" secondAttribute="trailing" constant="74" id="hvu-j1-xXn"/>
+                            <constraint firstItem="v3S-DE-UtH" firstAttribute="leading" secondItem="a9K-MK-fs7" secondAttribute="leading" constant="67" id="msw-F3-al8"/>
+                            <constraint firstItem="sWs-ux-qBq" firstAttribute="top" secondItem="a9K-MK-fs7" secondAttribute="top" constant="91" id="nvZ-5h-tIF"/>
+                            <constraint firstItem="qbC-mn-dT2" firstAttribute="bottom" secondItem="a9K-MK-fs7" secondAttribute="bottom" id="ppm-Rz-xun"/>
+                            <constraint firstAttribute="trailing" secondItem="sSA-rn-BDW" secondAttribute="trailing" id="vrK-4H-ccw"/>
+                            <constraint firstItem="sSA-rn-BDW" firstAttribute="trailing" secondItem="qbC-mn-dT2" secondAttribute="trailing" id="wIP-DV-gHW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a9K-MK-fs7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGD-o6-6tc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="821.73913043478262"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="qwa-Iq-xUp">
+            <objects>
+                <viewController id="eSP-3F-onx" customClass="FindDrinkViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Yv-P6-ROF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="i2U-0L-h2l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="findMyDrinkLabel" text="Find My Drink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wed-0f-Plv">
+                                <rect key="frame" x="43" y="180" width="289" height="107"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="JCR-sh-fT6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="47"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIH-UD-bRc">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="9o9-yi-gkm">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="Hr8-yh-AjX">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="ltB-HN-oWZ"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="JJC-8F-cwB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="Eac-eq-sDJ">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="eSP-3F-onx" id="Bwz-63-TfO"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="DIn-x4-b0h"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="coffeeOrTeaLabel" text="Would you like a coffee or a tea?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU7-gN-4v3">
+                                <rect key="frame" x="31" y="313" width="313" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="a0G-fz-amm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="coffeeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-mb-EVI">
+                                <rect key="frame" x="142" y="370" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3vQ-4F-GTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="Coffee">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zji-Oc-RTM" kind="show" identifier="toCoffeeView" id="DQy-Iz-bhz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="teaBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPW-te-suY">
+                                <rect key="frame" x="163" y="408" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9X8-9g-Hhp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="Tea">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NE1-GZ-dpM" kind="show" identifier="toTeaView" id="wd7-Ue-s3X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="i2U-0L-h2l" firstAttribute="leading" secondItem="7Yv-P6-ROF" secondAttribute="leading" id="4dA-6x-jKJ"/>
+                            <constraint firstItem="NU7-gN-4v3" firstAttribute="top" secondItem="i2U-0L-h2l" secondAttribute="bottom" constant="46" id="6bB-cd-CBe"/>
+                            <constraint firstItem="i2U-0L-h2l" firstAttribute="trailing" secondItem="iIH-UD-bRc" secondAttribute="trailing" id="9gS-D9-tGf"/>
+                            <constraint firstItem="NU7-gN-4v3" firstAttribute="leading" secondItem="u29-L8-jJC" secondAttribute="leading" constant="25" id="CM1-NG-ObR"/>
+                            <constraint firstItem="i2U-0L-h2l" firstAttribute="centerX" secondItem="Wed-0f-Plv" secondAttribute="centerX" id="DZa-MZ-bX0"/>
+                            <constraint firstItem="cPW-te-suY" firstAttribute="leading" secondItem="u29-L8-jJC" secondAttribute="leading" constant="154" id="Ewf-E5-d8Q"/>
+                            <constraint firstItem="iIH-UD-bRc" firstAttribute="bottom" secondItem="u29-L8-jJC" secondAttribute="bottom" id="F0s-C4-ni7"/>
+                            <constraint firstItem="wYF-mb-EVI" firstAttribute="centerX" secondItem="cPW-te-suY" secondAttribute="centerX" id="ISO-Qa-9Fw"/>
+                            <constraint firstItem="Wed-0f-Plv" firstAttribute="top" secondItem="u29-L8-jJC" secondAttribute="top" constant="160" id="KnX-WE-N9b"/>
+                            <constraint firstItem="Wed-0f-Plv" firstAttribute="leading" secondItem="u29-L8-jJC" secondAttribute="leading" constant="43" id="LHB-3I-yFt"/>
+                            <constraint firstItem="i2U-0L-h2l" firstAttribute="top" secondItem="7Yv-P6-ROF" secondAttribute="top" id="NNp-Wo-gKy"/>
+                            <constraint firstItem="i2U-0L-h2l" firstAttribute="leading" secondItem="iIH-UD-bRc" secondAttribute="leading" id="UK8-qG-jsd"/>
+                            <constraint firstItem="u29-L8-jJC" firstAttribute="trailing" secondItem="wYF-mb-EVI" secondAttribute="trailing" constant="162" id="cg9-ux-AsM"/>
+                            <constraint firstAttribute="trailing" secondItem="i2U-0L-h2l" secondAttribute="trailing" id="ett-mc-BJG"/>
+                            <constraint firstItem="NU7-gN-4v3" firstAttribute="top" secondItem="Wed-0f-Plv" secondAttribute="bottom" constant="26" id="hJZ-Zx-WG6"/>
+                            <constraint firstItem="cPW-te-suY" firstAttribute="top" secondItem="wYF-mb-EVI" secondAttribute="bottom" constant="8" symbolic="YES" id="m6C-fa-a7f"/>
+                            <constraint firstItem="wYF-mb-EVI" firstAttribute="leading" secondItem="u29-L8-jJC" secondAttribute="leading" constant="141" id="oeg-Qt-VYh"/>
+                            <constraint firstItem="wYF-mb-EVI" firstAttribute="top" secondItem="NU7-gN-4v3" secondAttribute="bottom" constant="8" symbolic="YES" id="qbx-Na-RCG"/>
+                            <constraint firstItem="Wed-0f-Plv" firstAttribute="centerX" secondItem="NU7-gN-4v3" secondAttribute="centerX" id="zxJ-lS-zLp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u29-L8-jJC"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UFF-hn-c9p" appends="YES" id="kMc-uA-wdv"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="xZO-43-PAs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ml4-uN-hdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UFF-hn-c9p"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="31.934032983508249"/>
+        </scene>
+        <!--Tea View Controller-->
+        <scene sceneID="pQA-wb-Wrf">
+            <objects>
+                <viewController id="NE1-GZ-dpM" customClass="TeaViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="To7-Vp-o33">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-yn-XUk">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="aZ0-Mp-t0j">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="GAi-9c-fuR">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="7Aa-U4-B5r"/>
+                                                <segue destination="eSP-3F-onx" kind="show" identifier="toFindMyDrinkView" id="WbI-Ug-uzB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="hBI-Ei-uHh">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="NE1-GZ-dpM" id="aez-Mu-STP"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="DVS-jB-NgE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="SMj-Nd-794">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="teaLabel" text="Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8b-Qg-xd6">
+                                <rect key="frame" x="127" y="156" width="120" height="140"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="iy1-7I-Gth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="84"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="icedTeaBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al2-Xn-qdL">
+                                <rect key="frame" x="133" y="359" width="114" height="47"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="Iced tea">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U1u-eT-K4a" kind="show" identifier="toSweetView" id="5aq-3T-rIE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="hotTeaBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wm-2n-tRD">
+                                <rect key="frame" x="133" y="410" width="114" height="47"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="hot tea">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U1u-eT-K4a" kind="show" identifier="toSweetView" id="ZYW-HL-n18"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="icedOrHotTeaLabel" text="Would you like iced or hot TEa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-L6-neU">
+                                <rect key="frame" x="43" y="304" width="289" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="OGp-g4-Szi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k8b-Qg-xd6" firstAttribute="trailing" secondItem="al2-Xn-qdL" secondAttribute="trailing" id="7sc-Kz-gUz"/>
+                            <constraint firstAttribute="trailing" secondItem="SMj-Nd-794" secondAttribute="trailing" id="988-FP-Xdv"/>
+                            <constraint firstItem="al2-Xn-qdL" firstAttribute="trailing" secondItem="9wm-2n-tRD" secondAttribute="trailing" id="CUK-h0-EFD"/>
+                            <constraint firstItem="k8b-Qg-xd6" firstAttribute="leading" secondItem="xpb-T6-G7M" secondAttribute="leading" constant="127" id="Kig-OY-JXx"/>
+                            <constraint firstItem="SMj-Nd-794" firstAttribute="trailing" secondItem="zPk-yn-XUk" secondAttribute="trailing" id="M2W-Vo-dVB"/>
+                            <constraint firstItem="SMj-Nd-794" firstAttribute="top" secondItem="To7-Vp-o33" secondAttribute="top" id="NOP-4j-pl9"/>
+                            <constraint firstItem="k8b-Qg-xd6" firstAttribute="top" secondItem="xpb-T6-G7M" secondAttribute="top" constant="136" id="NTh-yt-wBN"/>
+                            <constraint firstItem="al2-Xn-qdL" firstAttribute="leading" secondItem="9wm-2n-tRD" secondAttribute="leading" id="OLt-cC-6bq"/>
+                            <constraint firstItem="QLb-L6-neU" firstAttribute="leading" secondItem="xpb-T6-G7M" secondAttribute="leading" constant="43" id="Phb-et-xhy"/>
+                            <constraint firstItem="SMj-Nd-794" firstAttribute="centerX" secondItem="k8b-Qg-xd6" secondAttribute="centerX" id="Plb-3n-sY5"/>
+                            <constraint firstItem="SMj-Nd-794" firstAttribute="leading" secondItem="zPk-yn-XUk" secondAttribute="leading" id="RR4-1G-QUD"/>
+                            <constraint firstItem="k8b-Qg-xd6" firstAttribute="centerX" secondItem="QLb-L6-neU" secondAttribute="centerX" id="Rlw-T4-Wob"/>
+                            <constraint firstItem="9wm-2n-tRD" firstAttribute="top" secondItem="al2-Xn-qdL" secondAttribute="bottom" constant="4" id="Vii-g3-gTx"/>
+                            <constraint firstItem="al2-Xn-qdL" firstAttribute="leading" secondItem="xpb-T6-G7M" secondAttribute="leading" constant="133" id="e4E-9S-wkC"/>
+                            <constraint firstItem="al2-Xn-qdL" firstAttribute="top" secondItem="QLb-L6-neU" secondAttribute="bottom" constant="6" id="fz2-uA-QIv"/>
+                            <constraint firstItem="QLb-L6-neU" firstAttribute="top" secondItem="SMj-Nd-794" secondAttribute="bottom" constant="37" id="l1V-ev-5VY"/>
+                            <constraint firstItem="zPk-yn-XUk" firstAttribute="bottom" secondItem="xpb-T6-G7M" secondAttribute="bottom" id="rDU-oJ-I2v"/>
+                            <constraint firstItem="SMj-Nd-794" firstAttribute="leading" secondItem="To7-Vp-o33" secondAttribute="leading" id="vTV-U5-W6l"/>
+                            <constraint firstItem="QLb-L6-neU" firstAttribute="top" secondItem="k8b-Qg-xd6" secondAttribute="bottom" constant="8" symbolic="YES" id="xVt-ej-FEz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xpb-T6-G7M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bw1-FR-mmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="364"/>
+        </scene>
+        <!--Tea Sweet View Controller-->
+        <scene sceneID="LK6-8z-QUa">
+            <objects>
+                <viewController id="U1u-eT-K4a" customClass="TeaSweetViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o6s-u3-ppW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="NzJ-Ig-cRL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel2" text="you like your drink?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-ml-yEI">
+                                <rect key="frame" x="34" y="157" width="325" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel1" text="How sweet would " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-qr-AUf">
+                                <rect key="frame" x="57" y="110" width="278" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="eMk-hh-IEg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaSweetZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXe-7I-evT">
+                                <rect key="frame" x="44" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="0ny-kS-LrL"/>
+                                    <constraint firstAttribute="height" constant="57" id="u12-cF-Nh4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="ZGb-Mm-o9u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaSweetOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5q-0V-b1e">
+                                <rect key="frame" x="96" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="HXJ-ZH-9tT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="wag-CH-5Ch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaSweetTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y17-de-GwL">
+                                <rect key="frame" x="148" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="rtb-f0-vJM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="BeG-bU-hja"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaSweetThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-TJ-k2g">
+                                <rect key="frame" x="200" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="kIQ-6A-p0X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="zWv-gG-TRu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaSweetFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-25-IcV">
+                                <rect key="frame" x="252" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="fRa-gi-aAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="fON-qv-UlA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaSweetFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-HD-9YJ">
+                                <rect key="frame" x="304" y="353" width="44" height="57"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="6Er-Tj-1xl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetScaleLabel" text="on a scale of 0 to 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmP-gA-fry">
+                                <rect key="frame" x="97" y="296" width="181" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="AFV-Op-BRj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="X7R-dN-xH5">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="fzK-0T-7qB">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="qae-MK-KSS">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="4dg-kB-Q2Q"/>
+                                                <segue destination="NE1-GZ-dpM" kind="show" identifier="toTeaView" id="1DR-8j-IRR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="eIO-K1-P64">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="J6j-B3-8GM"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="OOX-pZ-J3G"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EYo-ml-yEI" firstAttribute="leading" secondItem="vnD-8r-liH" secondAttribute="leading" constant="34" id="1Pm-Ah-CmY"/>
+                            <constraint firstItem="M5q-0V-b1e" firstAttribute="baseline" secondItem="Y17-de-GwL" secondAttribute="baseline" id="4ad-Me-YOn"/>
+                            <constraint firstItem="NzJ-Ig-cRL" firstAttribute="leading" secondItem="o6s-u3-ppW" secondAttribute="leading" id="5Kl-Tf-OGO"/>
+                            <constraint firstItem="CrH-TJ-k2g" firstAttribute="baseline" secondItem="qH8-25-IcV" secondAttribute="baseline" id="5PJ-43-91w"/>
+                            <constraint firstItem="NzJ-Ig-cRL" firstAttribute="trailing" secondItem="X7R-dN-xH5" secondAttribute="trailing" id="6X8-VX-tUm"/>
+                            <constraint firstItem="JXe-7I-evT" firstAttribute="baseline" secondItem="M5q-0V-b1e" secondAttribute="baseline" id="8px-mk-CPh"/>
+                            <constraint firstItem="tiX-HD-9YJ" firstAttribute="leading" secondItem="qH8-25-IcV" secondAttribute="trailing" constant="8" symbolic="YES" id="9Sx-93-go5"/>
+                            <constraint firstItem="JXe-7I-evT" firstAttribute="top" secondItem="EYo-ml-yEI" secondAttribute="bottom" constant="39" id="A4P-1z-ZGs"/>
+                            <constraint firstItem="5pi-qr-AUf" firstAttribute="top" secondItem="vnD-8r-liH" secondAttribute="top" constant="90" id="AqS-rY-Yv2"/>
+                            <constraint firstItem="CrH-TJ-k2g" firstAttribute="leading" secondItem="Y17-de-GwL" secondAttribute="trailing" constant="8" symbolic="YES" id="Bmw-3z-2dN"/>
+                            <constraint firstItem="M5q-0V-b1e" firstAttribute="top" secondItem="DmP-gA-fry" secondAttribute="bottom" constant="8" symbolic="YES" id="Diy-Gf-z7M"/>
+                            <constraint firstItem="CrH-TJ-k2g" firstAttribute="top" secondItem="qH8-25-IcV" secondAttribute="top" id="DxW-Yu-Wnk"/>
+                            <constraint firstItem="CrH-TJ-k2g" firstAttribute="baseline" secondItem="qH8-25-IcV" secondAttribute="firstBaseline" id="ElB-fY-ZTh"/>
+                            <constraint firstItem="vnD-8r-liH" firstAttribute="trailing" secondItem="tiX-HD-9YJ" secondAttribute="trailing" constant="27" id="F06-uE-GWe"/>
+                            <constraint firstItem="JXe-7I-evT" firstAttribute="top" secondItem="M5q-0V-b1e" secondAttribute="top" id="FAT-ro-pnH"/>
+                            <constraint firstItem="EYo-ml-yEI" firstAttribute="top" secondItem="vnD-8r-liH" secondAttribute="top" constant="137" id="GjU-7T-Kta"/>
+                            <constraint firstItem="M5q-0V-b1e" firstAttribute="baseline" secondItem="Y17-de-GwL" secondAttribute="firstBaseline" id="HDO-mP-mz5"/>
+                            <constraint firstItem="Y17-de-GwL" firstAttribute="baseline" secondItem="CrH-TJ-k2g" secondAttribute="baseline" id="IMw-7Z-jBW"/>
+                            <constraint firstItem="NzJ-Ig-cRL" firstAttribute="leading" secondItem="X7R-dN-xH5" secondAttribute="leading" id="JYc-lB-UrT"/>
+                            <constraint firstItem="5pi-qr-AUf" firstAttribute="leading" secondItem="vnD-8r-liH" secondAttribute="leading" constant="57" id="L3a-vY-8Iy"/>
+                            <constraint firstItem="EYo-ml-yEI" firstAttribute="trailing" secondItem="o6s-u3-ppW" secondAttribute="trailingMargin" id="OIP-bI-lR8"/>
+                            <constraint firstItem="Y17-de-GwL" firstAttribute="top" secondItem="CrH-TJ-k2g" secondAttribute="top" id="PGX-gL-mMy"/>
+                            <constraint firstAttribute="trailing" secondItem="NzJ-Ig-cRL" secondAttribute="trailing" id="So6-Sn-80W"/>
+                            <constraint firstItem="qH8-25-IcV" firstAttribute="baseline" secondItem="tiX-HD-9YJ" secondAttribute="firstBaseline" id="V83-N5-NLr"/>
+                            <constraint firstItem="M5q-0V-b1e" firstAttribute="top" secondItem="Y17-de-GwL" secondAttribute="top" id="aeF-1Q-mhg"/>
+                            <constraint firstItem="M5q-0V-b1e" firstAttribute="leading" secondItem="JXe-7I-evT" secondAttribute="trailing" constant="8" symbolic="YES" id="dSs-8b-QnD"/>
+                            <constraint firstItem="DmP-gA-fry" firstAttribute="top" secondItem="NzJ-Ig-cRL" secondAttribute="bottom" constant="29" id="fki-oM-BmL"/>
+                            <constraint firstItem="JXe-7I-evT" firstAttribute="leading" secondItem="vnD-8r-liH" secondAttribute="leading" constant="44" id="haf-vV-2ai"/>
+                            <constraint firstItem="NzJ-Ig-cRL" firstAttribute="bottom" secondItem="5pi-qr-AUf" secondAttribute="bottom" id="kdj-a9-lfV"/>
+                            <constraint firstItem="qH8-25-IcV" firstAttribute="top" secondItem="tiX-HD-9YJ" secondAttribute="top" id="kmb-fc-YEk"/>
+                            <constraint firstItem="qH8-25-IcV" firstAttribute="leading" secondItem="CrH-TJ-k2g" secondAttribute="trailing" constant="8" symbolic="YES" id="kyT-mS-VYT"/>
+                            <constraint firstItem="M5q-0V-b1e" firstAttribute="baseline" secondItem="JXe-7I-evT" secondAttribute="firstBaseline" id="mdN-mE-SMH"/>
+                            <constraint firstItem="Y17-de-GwL" firstAttribute="baseline" secondItem="CrH-TJ-k2g" secondAttribute="firstBaseline" id="oZW-Yy-Mpx"/>
+                            <constraint firstItem="5pi-qr-AUf" firstAttribute="centerX" secondItem="EYo-ml-yEI" secondAttribute="centerX" id="orp-5m-faT"/>
+                            <constraint firstItem="NzJ-Ig-cRL" firstAttribute="centerX" secondItem="DmP-gA-fry" secondAttribute="centerX" id="raB-GU-vvl"/>
+                            <constraint firstItem="NzJ-Ig-cRL" firstAttribute="top" secondItem="o6s-u3-ppW" secondAttribute="top" id="vrm-fz-5mn"/>
+                            <constraint firstItem="qH8-25-IcV" firstAttribute="baseline" secondItem="tiX-HD-9YJ" secondAttribute="baseline" id="wI3-40-jnk"/>
+                            <constraint firstItem="X7R-dN-xH5" firstAttribute="bottom" secondItem="vnD-8r-liH" secondAttribute="bottom" id="wYf-on-1Y6"/>
+                            <constraint firstItem="Y17-de-GwL" firstAttribute="leading" secondItem="M5q-0V-b1e" secondAttribute="trailing" constant="8" symbolic="YES" id="xwm-RI-W2j"/>
+                            <constraint firstItem="JXe-7I-evT" firstAttribute="baseline" secondItem="M5q-0V-b1e" secondAttribute="firstBaseline" id="zmd-j5-GDL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vnD-8r-liH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7s9-b3-0U1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="364"/>
+        </scene>
+        <!--Tea Caff View Controller-->
+        <scene sceneID="egF-fW-Fyl">
+            <objects>
+                <viewController id="7Yp-dS-qeG" customClass="TeaCaffViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8mZ-AS-cRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="q50-Of-jto">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel1" text="How much caffeine would" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e8-uD-aA6" customClass="caffLabel1">
+                                <rect key="frame" x="21" y="124" width="338" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="Coc-Mf-fbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel2" text="you like in your drink?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-hk-Qkr" customClass="caffLabel2">
+                                <rect key="frame" x="36" y="165" width="417" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="caffScaleLabel" text="on a scale of 0 to 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-7U-fbc" customClass="caffScale">
+                                <rect key="frame" x="97.5" y="296" width="181" height="49"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaCaffZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4d-YA-SMv">
+                                <rect key="frame" x="38" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="8Px-uP-usk"/>
+                                    <constraint firstAttribute="width" constant="44" id="crf-Dt-HW6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="qw3-Yx-mXV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaCaffOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I9-U4-Ckw">
+                                <rect key="frame" x="90" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Fwq-Ot-ool"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="irh-jB-Scd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaCaffTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfU-Pr-Nsm">
+                                <rect key="frame" x="142" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="UlO-kg-dzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="WNf-x8-ksh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaCaffThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE8-x8-mTe">
+                                <rect key="frame" x="194" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Kiu-SP-tkg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="o9J-3A-2MR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaCaffFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jf-9R-kee">
+                                <rect key="frame" x="246" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="pgY-6T-0Kh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="dG9-T7-wyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaCaffFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf2-7a-oe3">
+                                <rect key="frame" x="298" y="353" width="44" height="57"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="C3r-vy-mwj"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-ZA-3oM">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="BUd-ER-t6D">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="m7i-uv-RlU">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="iod-7Y-guD"/>
+                                                <segue destination="U1u-eT-K4a" kind="show" identifier="toSweetView" id="7BC-5H-m1Y"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="KDm-vO-h8T" customClass="toHomeView">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="PKq-cp-iwp"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="TBh-aj-BQM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ugD-hk-Qkr" firstAttribute="top" secondItem="L3J-Vx-Gus" secondAttribute="top" constant="145" id="3SX-7a-L8E"/>
+                            <constraint firstItem="ugD-hk-Qkr" firstAttribute="baseline" secondItem="dJ7-7U-fbc" secondAttribute="firstBaseline" id="4Bu-G5-GCv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ugD-hk-Qkr" secondAttribute="trailing" constant="-94" id="5Zh-cB-C91"/>
+                            <constraint firstItem="2jf-9R-kee" firstAttribute="baseline" secondItem="Mf2-7a-oe3" secondAttribute="baseline" id="6Dg-wy-Dev"/>
+                            <constraint firstItem="4e8-uD-aA6" firstAttribute="top" secondItem="L3J-Vx-Gus" secondAttribute="top" constant="104" id="7Aw-eX-CqP"/>
+                            <constraint firstItem="A4d-YA-SMv" firstAttribute="top" secondItem="ugD-hk-Qkr" secondAttribute="bottom" constant="31" id="7bh-mm-twU"/>
+                            <constraint firstItem="5I9-U4-Ckw" firstAttribute="top" secondItem="dJ7-7U-fbc" secondAttribute="bottom" constant="8" symbolic="YES" id="Bgu-GY-Epi"/>
+                            <constraint firstItem="kfU-Pr-Nsm" firstAttribute="baseline" secondItem="qE8-x8-mTe" secondAttribute="firstBaseline" id="E0m-YW-Koy"/>
+                            <constraint firstItem="5I9-U4-Ckw" firstAttribute="baseline" secondItem="A4d-YA-SMv" secondAttribute="firstBaseline" id="ECo-9g-yHe"/>
+                            <constraint firstItem="qE8-x8-mTe" firstAttribute="baseline" secondItem="2jf-9R-kee" secondAttribute="firstBaseline" id="FFd-oO-MD3"/>
+                            <constraint firstItem="4e8-uD-aA6" firstAttribute="leading" secondItem="L3J-Vx-Gus" secondAttribute="leading" constant="21" id="Fox-Ii-FVi"/>
+                            <constraint firstItem="A4d-YA-SMv" firstAttribute="top" secondItem="5I9-U4-Ckw" secondAttribute="top" id="GNN-W2-WhT"/>
+                            <constraint firstItem="A4d-YA-SMv" firstAttribute="baseline" secondItem="5I9-U4-Ckw" secondAttribute="firstBaseline" id="IvR-Vp-xdr"/>
+                            <constraint firstItem="vkX-ZA-3oM" firstAttribute="leading" secondItem="L3J-Vx-Gus" secondAttribute="leading" constant="3" id="JYm-Pj-zjA"/>
+                            <constraint firstItem="dJ7-7U-fbc" firstAttribute="top" secondItem="4e8-uD-aA6" secondAttribute="bottom" constant="15" id="LRY-Zj-nh1"/>
+                            <constraint firstItem="qE8-x8-mTe" firstAttribute="top" secondItem="2jf-9R-kee" secondAttribute="top" id="Loe-s9-em3"/>
+                            <constraint firstItem="5I9-U4-Ckw" firstAttribute="top" secondItem="kfU-Pr-Nsm" secondAttribute="top" id="MAN-9x-AQj"/>
+                            <constraint firstItem="q50-Of-jto" firstAttribute="leading" secondItem="8mZ-AS-cRo" secondAttribute="leading" id="MUm-10-vNu"/>
+                            <constraint firstItem="kfU-Pr-Nsm" firstAttribute="top" secondItem="qE8-x8-mTe" secondAttribute="top" id="MiZ-jt-taK"/>
+                            <constraint firstItem="vkX-ZA-3oM" firstAttribute="bottom" secondItem="L3J-Vx-Gus" secondAttribute="bottom" id="N8T-O8-dfo"/>
+                            <constraint firstItem="2jf-9R-kee" firstAttribute="baseline" secondItem="Mf2-7a-oe3" secondAttribute="firstBaseline" id="NvB-F9-fPW"/>
+                            <constraint firstItem="kfU-Pr-Nsm" firstAttribute="leading" secondItem="5I9-U4-Ckw" secondAttribute="trailing" constant="8" symbolic="YES" id="PAn-yS-RWj"/>
+                            <constraint firstItem="qE8-x8-mTe" firstAttribute="baseline" secondItem="2jf-9R-kee" secondAttribute="baseline" id="R2F-LN-ejc"/>
+                            <constraint firstAttribute="trailing" secondItem="q50-Of-jto" secondAttribute="trailing" id="Stx-oW-vdx"/>
+                            <constraint firstItem="5I9-U4-Ckw" firstAttribute="baseline" secondItem="kfU-Pr-Nsm" secondAttribute="firstBaseline" id="XZH-5z-D1l"/>
+                            <constraint firstItem="A4d-YA-SMv" firstAttribute="leading" secondItem="L3J-Vx-Gus" secondAttribute="leading" constant="38" id="ZDs-aC-ReP"/>
+                            <constraint firstItem="Mf2-7a-oe3" firstAttribute="leading" secondItem="2jf-9R-kee" secondAttribute="trailing" constant="8" symbolic="YES" id="ZaY-bR-od2"/>
+                            <constraint firstItem="5I9-U4-Ckw" firstAttribute="baseline" secondItem="kfU-Pr-Nsm" secondAttribute="baseline" id="a5z-1S-6HY"/>
+                            <constraint firstItem="4e8-uD-aA6" firstAttribute="centerX" secondItem="vkX-ZA-3oM" secondAttribute="centerX" id="aCV-Ry-0fs"/>
+                            <constraint firstItem="L3J-Vx-Gus" firstAttribute="trailing" secondItem="Mf2-7a-oe3" secondAttribute="trailing" constant="33" id="bit-oP-F3X"/>
+                            <constraint firstItem="kfU-Pr-Nsm" firstAttribute="baseline" secondItem="qE8-x8-mTe" secondAttribute="baseline" id="dJ9-b2-5Se"/>
+                            <constraint firstItem="ugD-hk-Qkr" firstAttribute="leading" secondItem="L3J-Vx-Gus" secondAttribute="leading" constant="36" id="eZz-Jp-qQS"/>
+                            <constraint firstItem="A4d-YA-SMv" firstAttribute="baseline" secondItem="5I9-U4-Ckw" secondAttribute="baseline" id="fGH-c2-jTW"/>
+                            <constraint firstItem="dJ7-7U-fbc" firstAttribute="top" secondItem="q50-Of-jto" secondAttribute="bottom" constant="29" id="fV1-8V-pUv"/>
+                            <constraint firstItem="2jf-9R-kee" firstAttribute="top" secondItem="Mf2-7a-oe3" secondAttribute="top" id="gqy-mJ-SyN"/>
+                            <constraint firstItem="2jf-9R-kee" firstAttribute="leading" secondItem="qE8-x8-mTe" secondAttribute="trailing" constant="8" symbolic="YES" id="gxX-sf-c06"/>
+                            <constraint firstItem="q50-Of-jto" firstAttribute="top" secondItem="8mZ-AS-cRo" secondAttribute="top" id="h0K-Pj-7l0"/>
+                            <constraint firstItem="4e8-uD-aA6" firstAttribute="trailing" secondItem="8mZ-AS-cRo" secondAttribute="trailingMargin" id="oLF-SF-FeC"/>
+                            <constraint firstItem="q50-Of-jto" firstAttribute="centerX" secondItem="dJ7-7U-fbc" secondAttribute="centerX" id="ssZ-Hd-Cke"/>
+                            <constraint firstItem="qE8-x8-mTe" firstAttribute="leading" secondItem="kfU-Pr-Nsm" secondAttribute="trailing" constant="8" symbolic="YES" id="wzP-vv-E4t"/>
+                            <constraint firstItem="5I9-U4-Ckw" firstAttribute="leading" secondItem="A4d-YA-SMv" secondAttribute="trailing" constant="8" symbolic="YES" id="ywC-sl-1r8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L3J-Vx-Gus"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLA-jV-SR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3076" y="364"/>
+        </scene>
+        <!--Tea Dairy View Controller-->
+        <scene sceneID="I2l-qW-HFO">
+            <objects>
+                <viewController id="Ea4-mD-bAe" customClass="TeaDairyViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpr-js-f0r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="fq8-T8-5Ax">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="QU3-ha-Rar">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="NbC-bk-YQw">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="bzH-gq-OW0"/>
+                                                <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="z0u-ib-LND"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="2KH-Ju-cjo">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="Iyh-xS-lkH"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="nCK-Gw-YsB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="LOV-nF-6qY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEN-W2-ene">
+                                <rect key="frame" x="-111" y="439" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="eU3-xM-Nn4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaa-J3-9gY">
+                                <rect key="frame" x="-59" y="439" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="bV2-MO-Jvq"/>
+                                    <constraint firstAttribute="width" constant="44" id="hsN-eo-6BW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dairyLabel2" text="you like in your drink?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLa-Bl-jYN">
+                                <rect key="frame" x="38" y="163" width="417" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dairyLabel1" text="How much dairy would" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xu1-mY-cas">
+                                <rect key="frame" x="38" y="122" width="338" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="hg9-85-FNF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dairyScaleLabel" text="on a scale of 0 to 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynY-Jl-so0">
+                                <rect key="frame" x="97" y="294" width="181" height="49"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-YW-Z7A">
+                                <rect key="frame" x="38" y="351" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="0np-Sj-McH"/>
+                                    <constraint firstAttribute="height" constant="57" id="8eK-xl-iae"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-NE-J7B">
+                                <rect key="frame" x="90" y="351" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="OJP-Xe-ZIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywn-YY-8ND">
+                                <rect key="frame" x="142" y="351" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Yab-SR-ljc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueY-yg-oI3">
+                                <rect key="frame" x="194" y="351" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="q3b-fj-qMA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTF-8U-bSB">
+                                <rect key="frame" x="246" y="351" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="HxC-v1-HUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u11-Bv-aHa">
+                                <rect key="frame" x="298" y="351" width="44" height="57"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LOV-nF-6qY" firstAttribute="leading" secondItem="fq8-T8-5Ax" secondAttribute="leading" id="1WX-ZC-5UM"/>
+                            <constraint firstItem="xaa-J3-9gY" firstAttribute="leading" secondItem="aEN-W2-ene" secondAttribute="trailing" constant="8" symbolic="YES" id="48t-e1-knN"/>
+                            <constraint firstItem="Ywn-YY-8ND" firstAttribute="leading" secondItem="Nk8-NE-J7B" secondAttribute="trailing" constant="8" symbolic="YES" id="8DP-pH-P1f"/>
+                            <constraint firstItem="xaa-J3-9gY" firstAttribute="top" secondItem="zpr-js-f0r" secondAttribute="top" constant="439" id="CAQ-HP-bJC"/>
+                            <constraint firstItem="lTF-8U-bSB" firstAttribute="baseline" secondItem="u11-Bv-aHa" secondAttribute="baseline" id="CSi-AX-fbt"/>
+                            <constraint firstItem="lTF-8U-bSB" firstAttribute="leading" secondItem="ueY-yg-oI3" secondAttribute="trailing" constant="8" symbolic="YES" id="EMu-LE-c7o"/>
+                            <constraint firstItem="DLa-Bl-jYN" firstAttribute="baseline" secondItem="ynY-Jl-so0" secondAttribute="firstBaseline" id="EuY-1E-cpj"/>
+                            <constraint firstItem="ynY-Jl-so0" firstAttribute="top" secondItem="LOV-nF-6qY" secondAttribute="bottom" constant="27" id="HZa-EZ-Vay"/>
+                            <constraint firstItem="ueY-yg-oI3" firstAttribute="baseline" secondItem="lTF-8U-bSB" secondAttribute="firstBaseline" id="J4L-Ky-Y7v"/>
+                            <constraint firstItem="8KG-YW-Z7A" firstAttribute="top" secondItem="Nk8-NE-J7B" secondAttribute="top" id="JO7-Dt-3jz"/>
+                            <constraint firstItem="aEN-W2-ene" firstAttribute="top" secondItem="xaa-J3-9gY" secondAttribute="top" id="KyW-98-EtA"/>
+                            <constraint firstItem="u11-Bv-aHa" firstAttribute="leading" secondItem="lTF-8U-bSB" secondAttribute="trailing" constant="8" symbolic="YES" id="L4q-pg-TfP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DLa-Bl-jYN" secondAttribute="trailing" constant="-96" id="NFT-uw-YmE"/>
+                            <constraint firstItem="lTF-8U-bSB" firstAttribute="top" secondItem="u11-Bv-aHa" secondAttribute="top" id="NIX-95-tmN"/>
+                            <constraint firstItem="Ywn-YY-8ND" firstAttribute="baseline" secondItem="ueY-yg-oI3" secondAttribute="baseline" id="Oej-MX-638"/>
+                            <constraint firstItem="s7e-PD-eDI" firstAttribute="trailing" secondItem="xaa-J3-9gY" secondAttribute="trailing" constant="390" id="PFP-Z6-Q9W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xu1-mY-cas" secondAttribute="trailing" constant="-17" id="PZI-91-pFp"/>
+                            <constraint firstItem="DLa-Bl-jYN" firstAttribute="leading" secondItem="8KG-YW-Z7A" secondAttribute="leading" id="QTm-MR-KwF"/>
+                            <constraint firstItem="Xu1-mY-cas" firstAttribute="top" secondItem="s7e-PD-eDI" secondAttribute="top" constant="102" id="TFx-qs-BRa"/>
+                            <constraint firstItem="lTF-8U-bSB" firstAttribute="baseline" secondItem="u11-Bv-aHa" secondAttribute="firstBaseline" id="TIZ-3B-x4g"/>
+                            <constraint firstItem="Nk8-NE-J7B" firstAttribute="top" secondItem="Ywn-YY-8ND" secondAttribute="top" id="UN1-BY-DK3"/>
+                            <constraint firstItem="Xu1-mY-cas" firstAttribute="leading" secondItem="DLa-Bl-jYN" secondAttribute="leading" id="WbE-05-r9W"/>
+                            <constraint firstItem="Nk8-NE-J7B" firstAttribute="leading" secondItem="8KG-YW-Z7A" secondAttribute="trailing" constant="8" symbolic="YES" id="YM7-jA-ltp"/>
+                            <constraint firstItem="Xu1-mY-cas" firstAttribute="leading" secondItem="s7e-PD-eDI" secondAttribute="leading" constant="38" id="a9J-GP-cgz"/>
+                            <constraint firstItem="LOV-nF-6qY" firstAttribute="centerX" secondItem="ynY-Jl-so0" secondAttribute="centerX" id="aCv-6V-Z1a"/>
+                            <constraint firstAttribute="trailing" secondItem="LOV-nF-6qY" secondAttribute="trailing" id="bIr-C4-SPU"/>
+                            <constraint firstItem="aEN-W2-ene" firstAttribute="baseline" secondItem="xaa-J3-9gY" secondAttribute="firstBaseline" id="bPd-KD-rnt"/>
+                            <constraint firstItem="8KG-YW-Z7A" firstAttribute="baseline" secondItem="Nk8-NE-J7B" secondAttribute="baseline" id="bm4-DA-II4"/>
+                            <constraint firstItem="LOV-nF-6qY" firstAttribute="trailing" secondItem="fq8-T8-5Ax" secondAttribute="trailing" id="clU-yD-ec1"/>
+                            <constraint firstItem="s7e-PD-eDI" firstAttribute="trailing" secondItem="u11-Bv-aHa" secondAttribute="trailing" constant="33" id="eCR-59-dNh"/>
+                            <constraint firstItem="ueY-yg-oI3" firstAttribute="leading" secondItem="Ywn-YY-8ND" secondAttribute="trailing" constant="8" symbolic="YES" id="eSN-Nt-FNC"/>
+                            <constraint firstItem="LOV-nF-6qY" firstAttribute="leading" secondItem="zpr-js-f0r" secondAttribute="leading" id="giD-u5-ydZ"/>
+                            <constraint firstItem="ueY-yg-oI3" firstAttribute="top" secondItem="lTF-8U-bSB" secondAttribute="top" id="jJc-8s-5Yo"/>
+                            <constraint firstItem="LOV-nF-6qY" firstAttribute="top" secondItem="zpr-js-f0r" secondAttribute="top" id="kBU-Ed-glb"/>
+                            <constraint firstItem="DLa-Bl-jYN" firstAttribute="top" secondItem="s7e-PD-eDI" secondAttribute="top" constant="143" id="kex-2B-5vN"/>
+                            <constraint firstItem="Ywn-YY-8ND" firstAttribute="baseline" secondItem="ueY-yg-oI3" secondAttribute="firstBaseline" id="l1S-Wr-9kX"/>
+                            <constraint firstItem="8KG-YW-Z7A" firstAttribute="top" secondItem="DLa-Bl-jYN" secondAttribute="bottom" constant="31" id="lWg-C0-Umv"/>
+                            <constraint firstItem="8KG-YW-Z7A" firstAttribute="baseline" secondItem="Nk8-NE-J7B" secondAttribute="firstBaseline" id="lkw-Se-tF1"/>
+                            <constraint firstItem="fq8-T8-5Ax" firstAttribute="bottom" secondItem="s7e-PD-eDI" secondAttribute="bottom" id="lor-vr-YbQ"/>
+                            <constraint firstItem="Nk8-NE-J7B" firstAttribute="top" secondItem="ynY-Jl-so0" secondAttribute="bottom" constant="8" symbolic="YES" id="ocS-yP-4rB"/>
+                            <constraint firstItem="Nk8-NE-J7B" firstAttribute="baseline" secondItem="Ywn-YY-8ND" secondAttribute="baseline" id="rS4-gA-G4z"/>
+                            <constraint firstItem="ueY-yg-oI3" firstAttribute="baseline" secondItem="lTF-8U-bSB" secondAttribute="baseline" id="rSd-1R-t44"/>
+                            <constraint firstItem="xaa-J3-9gY" firstAttribute="baseline" secondItem="aEN-W2-ene" secondAttribute="firstBaseline" id="s2o-7Q-oMd"/>
+                            <constraint firstItem="Nk8-NE-J7B" firstAttribute="baseline" secondItem="Ywn-YY-8ND" secondAttribute="firstBaseline" id="sRY-ZZ-ngf"/>
+                            <constraint firstItem="Ywn-YY-8ND" firstAttribute="top" secondItem="ueY-yg-oI3" secondAttribute="top" id="ydi-Ke-vF9"/>
+                            <constraint firstItem="ynY-Jl-so0" firstAttribute="top" secondItem="Xu1-mY-cas" secondAttribute="bottom" constant="15" id="yms-hG-hqR"/>
+                            <constraint firstItem="Nk8-NE-J7B" firstAttribute="baseline" secondItem="8KG-YW-Z7A" secondAttribute="firstBaseline" id="zPg-rz-9Gv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s7e-PD-eDI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2c-KV-H2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3790" y="364"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p7D-0T-sDO">
+            <objects>
+                <viewController id="UPi-yK-eLQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8w-Ez-KVd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7CF-KW-LRv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gK0-Us-kZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4631" y="32"/>
+        </scene>
+        <!--Coffee View Controller-->
+        <scene sceneID="jKo-NZ-dyq">
+            <objects>
+                <viewController id="zji-Oc-RTM" customClass="CoffeeViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Trr-xU-GuS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="aBV-wa-6nZ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="HW0-gH-VBA">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="o9x-8G-lPX">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="6go-n6-jtL"/>
+                                                <segue destination="eSP-3F-onx" kind="show" identifier="toFindMyDrinkView" id="jTR-Vv-Pyg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="MC7-Zf-nns">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="Wz7-Ko-7Nz"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="UVQ-iG-u88"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="WKe-t1-i8G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="coffeeLabel" text="Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJK-gc-HmM">
+                                <rect key="frame" x="78" y="133" width="218" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="7Od-a6-JX5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="84"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="icedOrHotCoffeeLabel" text="Would you like iced or hot coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey6-Qd-Xfp">
+                                <rect key="frame" x="31" y="298" width="312" height="49"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="hotCoffeeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e8-vh-4NF">
+                                <rect key="frame" x="113" y="393" width="149" height="47"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="Hot Coffee">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="54Y-pQ-vHO" kind="show" identifier="toSweetView" id="nC2-xA-dpv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="icedCoffeeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFF-T6-Xly" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="43" y="344" width="289" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tef-2t-8N0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="35"/>
+                                <state key="normal" title="Iced Coffee">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="54Y-pQ-vHO" kind="show" identifier="toSweetView" id="Gck-9K-d86"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WKe-t1-i8G" firstAttribute="top" secondItem="Trr-xU-GuS" secondAttribute="top" id="2Ba-pZ-XFV"/>
+                            <constraint firstItem="WKe-t1-i8G" firstAttribute="trailing" secondItem="aBV-wa-6nZ" secondAttribute="trailing" id="3ZA-Fw-Ia7"/>
+                            <constraint firstItem="HFF-T6-Xly" firstAttribute="leading" secondItem="eol-Af-Iuq" secondAttribute="leading" constant="43" id="4GG-KH-3P2"/>
+                            <constraint firstItem="Ey6-Qd-Xfp" firstAttribute="top" secondItem="vJK-gc-HmM" secondAttribute="bottom" constant="8" symbolic="YES" id="9da-f0-lIo"/>
+                            <constraint firstItem="vJK-gc-HmM" firstAttribute="leading" secondItem="eol-Af-Iuq" secondAttribute="leading" constant="78" id="K5p-dt-hhV"/>
+                            <constraint firstItem="HFF-T6-Xly" firstAttribute="centerX" secondItem="8e8-vh-4NF" secondAttribute="centerX" id="PHf-2J-fA2"/>
+                            <constraint firstItem="WKe-t1-i8G" firstAttribute="leading" secondItem="Trr-xU-GuS" secondAttribute="leading" id="RvA-WQ-pkk"/>
+                            <constraint firstItem="HFF-T6-Xly" firstAttribute="top" secondItem="vJK-gc-HmM" secondAttribute="bottom" constant="54" id="gHK-5V-e2b"/>
+                            <constraint firstItem="WKe-t1-i8G" firstAttribute="leading" secondItem="aBV-wa-6nZ" secondAttribute="leading" id="gfA-k8-AJc"/>
+                            <constraint firstItem="vJK-gc-HmM" firstAttribute="top" secondItem="eol-Af-Iuq" secondAttribute="top" constant="113" id="j7H-XF-PTr"/>
+                            <constraint firstItem="vJK-gc-HmM" firstAttribute="centerX" secondItem="Ey6-Qd-Xfp" secondAttribute="centerX" id="jDj-Uw-XO2"/>
+                            <constraint firstItem="aBV-wa-6nZ" firstAttribute="bottom" secondItem="eol-Af-Iuq" secondAttribute="bottom" id="lni-Ge-Fcf"/>
+                            <constraint firstItem="8e8-vh-4NF" firstAttribute="top" secondItem="Ey6-Qd-Xfp" secondAttribute="bottom" constant="46" id="oMj-iM-f27"/>
+                            <constraint firstItem="Ey6-Qd-Xfp" firstAttribute="centerX" secondItem="HFF-T6-Xly" secondAttribute="centerX" id="ozg-Si-WWg"/>
+                            <constraint firstItem="Ey6-Qd-Xfp" firstAttribute="top" secondItem="WKe-t1-i8G" secondAttribute="bottom" constant="31" id="s0K-h9-yvT"/>
+                            <constraint firstAttribute="trailing" secondItem="WKe-t1-i8G" secondAttribute="trailing" id="uMU-gN-az6"/>
+                            <constraint firstItem="8e8-vh-4NF" firstAttribute="top" secondItem="HFF-T6-Xly" secondAttribute="bottom" constant="4" id="uVy-Hs-2ls"/>
+                            <constraint firstItem="8e8-vh-4NF" firstAttribute="centerX" secondItem="aBV-wa-6nZ" secondAttribute="centerX" id="w86-lt-exg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eol-Af-Iuq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86l-nx-eex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="-307.1964017991005"/>
+        </scene>
+        <!--Coffee Sweet View Controller-->
+        <scene sceneID="DiC-Ms-DoA">
+            <objects>
+                <viewController id="54Y-pQ-vHO" customClass="CoffeeSweetViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WqB-8s-Ogg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="xXX-vh-iUe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel2" text="you like your drink?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3z-rm-Vpx">
+                                <rect key="frame" x="34" y="157" width="325" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel1" text="How sweet would " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy2-1n-3io">
+                                <rect key="frame" x="57" y="110" width="278" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="lE9-Pt-DgW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="OPo-08-dUE">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="Om2-Qd-aUf">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="Z2V-gM-Fqw">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="Ivp-yA-Buy"/>
+                                                <segue destination="zji-Oc-RTM" kind="show" identifier="toCoffeeView" id="6BC-e4-15C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="eKK-f3-2lO">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="os5-he-0qT"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="9Ds-0I-HHQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffSweetZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCQ-xf-yx6">
+                                <rect key="frame" x="44" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="HsD-Dc-scu"/>
+                                    <constraint firstAttribute="width" constant="44" id="Yph-gc-Hpe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="VIZ-gC-9qQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffSweetOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-dV-kDt">
+                                <rect key="frame" x="96" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="D0R-md-Wdb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="ILc-to-u1R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffSweetTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKA-iB-baa">
+                                <rect key="frame" x="148" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="exD-k0-lcp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="MST-hk-wdA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffSweetThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYh-Vo-SCp">
+                                <rect key="frame" x="200" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="6hi-bw-L9l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="vJD-UZ-Pcf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffSweetFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-ET-e66">
+                                <rect key="frame" x="252" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="o4L-58-QCN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="9L4-bN-GrO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffSweetFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-D3-uyx">
+                                <rect key="frame" x="304" y="353" width="44" height="57"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="gGD-Z7-4ar"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetScaleLabel" text="on a scale of 0 to 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTx-Sq-Dpm">
+                                <rect key="frame" x="97" y="296" width="181" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="xLj-Lv-UcA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cjz-dV-kDt" firstAttribute="top" secondItem="WKA-iB-baa" secondAttribute="top" id="0lp-VW-PSJ"/>
+                            <constraint firstItem="y0w-ET-e66" firstAttribute="baseline" secondItem="rhI-D3-uyx" secondAttribute="baseline" id="4Of-fv-Ubk"/>
+                            <constraint firstItem="fyc-EF-nbm" firstAttribute="trailing" secondItem="rhI-D3-uyx" secondAttribute="trailing" constant="27" id="4kl-d0-r0b"/>
+                            <constraint firstItem="nYh-Vo-SCp" firstAttribute="baseline" secondItem="y0w-ET-e66" secondAttribute="baseline" id="50O-SX-sCC"/>
+                            <constraint firstItem="y0w-ET-e66" firstAttribute="leading" secondItem="nYh-Vo-SCp" secondAttribute="trailing" constant="8" symbolic="YES" id="5Dj-Yv-9TG"/>
+                            <constraint firstItem="xXX-vh-iUe" firstAttribute="leading" secondItem="WqB-8s-Ogg" secondAttribute="leading" id="5ZQ-vi-XDv"/>
+                            <constraint firstItem="UCQ-xf-yx6" firstAttribute="top" secondItem="I3z-rm-Vpx" secondAttribute="bottom" constant="39" id="7DG-tw-dVP"/>
+                            <constraint firstItem="WKA-iB-baa" firstAttribute="baseline" secondItem="nYh-Vo-SCp" secondAttribute="baseline" id="7XC-6c-Lg4"/>
+                            <constraint firstItem="I3z-rm-Vpx" firstAttribute="trailing" secondItem="WqB-8s-Ogg" secondAttribute="trailingMargin" id="88s-3p-5xa"/>
+                            <constraint firstItem="UCQ-xf-yx6" firstAttribute="baseline" secondItem="cjz-dV-kDt" secondAttribute="baseline" id="ACI-hL-yhB"/>
+                            <constraint firstItem="y0w-ET-e66" firstAttribute="baseline" secondItem="rhI-D3-uyx" secondAttribute="firstBaseline" id="ALe-cw-JPS"/>
+                            <constraint firstItem="UCQ-xf-yx6" firstAttribute="top" secondItem="cjz-dV-kDt" secondAttribute="top" id="CKI-Fh-4K8"/>
+                            <constraint firstItem="nYh-Vo-SCp" firstAttribute="baseline" secondItem="y0w-ET-e66" secondAttribute="firstBaseline" id="Cnb-Ml-3aR"/>
+                            <constraint firstItem="Zy2-1n-3io" firstAttribute="leading" secondItem="fyc-EF-nbm" secondAttribute="leading" constant="57" id="FQA-f8-hO9"/>
+                            <constraint firstItem="rhI-D3-uyx" firstAttribute="leading" secondItem="y0w-ET-e66" secondAttribute="trailing" constant="8" symbolic="YES" id="GfR-mI-yBY"/>
+                            <constraint firstItem="cjz-dV-kDt" firstAttribute="baseline" secondItem="WKA-iB-baa" secondAttribute="firstBaseline" id="Hkv-yg-T72"/>
+                            <constraint firstItem="xXX-vh-iUe" firstAttribute="centerX" secondItem="rTx-Sq-Dpm" secondAttribute="centerX" id="Hoc-pO-mnk"/>
+                            <constraint firstItem="rTx-Sq-Dpm" firstAttribute="top" secondItem="xXX-vh-iUe" secondAttribute="bottom" constant="29" id="IGN-TA-M3r"/>
+                            <constraint firstItem="cjz-dV-kDt" firstAttribute="top" secondItem="rTx-Sq-Dpm" secondAttribute="bottom" constant="8" symbolic="YES" id="Jdl-Hu-6fk"/>
+                            <constraint firstItem="cjz-dV-kDt" firstAttribute="baseline" secondItem="UCQ-xf-yx6" secondAttribute="firstBaseline" id="S3R-oY-TgZ"/>
+                            <constraint firstItem="xXX-vh-iUe" firstAttribute="trailing" secondItem="OPo-08-dUE" secondAttribute="trailing" id="ZEo-dm-ibl"/>
+                            <constraint firstItem="Zy2-1n-3io" firstAttribute="top" secondItem="fyc-EF-nbm" secondAttribute="top" constant="90" id="ZH0-OE-UwL"/>
+                            <constraint firstItem="UCQ-xf-yx6" firstAttribute="leading" secondItem="fyc-EF-nbm" secondAttribute="leading" constant="44" id="a86-X7-tAR"/>
+                            <constraint firstItem="nYh-Vo-SCp" firstAttribute="top" secondItem="y0w-ET-e66" secondAttribute="top" id="afL-2r-4oI"/>
+                            <constraint firstItem="I3z-rm-Vpx" firstAttribute="leading" secondItem="fyc-EF-nbm" secondAttribute="leading" constant="34" id="as9-Pe-70z"/>
+                            <constraint firstItem="xXX-vh-iUe" firstAttribute="top" secondItem="WqB-8s-Ogg" secondAttribute="top" id="bmr-Aj-bJA"/>
+                            <constraint firstItem="I3z-rm-Vpx" firstAttribute="top" secondItem="fyc-EF-nbm" secondAttribute="top" constant="137" id="esn-xc-k2g"/>
+                            <constraint firstItem="cjz-dV-kDt" firstAttribute="baseline" secondItem="WKA-iB-baa" secondAttribute="baseline" id="f8N-5a-wwM"/>
+                            <constraint firstAttribute="trailing" secondItem="xXX-vh-iUe" secondAttribute="trailing" id="fbj-yR-6B6"/>
+                            <constraint firstItem="nYh-Vo-SCp" firstAttribute="leading" secondItem="WKA-iB-baa" secondAttribute="trailing" constant="8" symbolic="YES" id="ga9-3g-I14"/>
+                            <constraint firstItem="OPo-08-dUE" firstAttribute="bottom" secondItem="fyc-EF-nbm" secondAttribute="bottom" id="gbp-sw-6Kz"/>
+                            <constraint firstItem="WKA-iB-baa" firstAttribute="top" secondItem="nYh-Vo-SCp" secondAttribute="top" id="gpl-1n-a48"/>
+                            <constraint firstItem="xXX-vh-iUe" firstAttribute="bottom" secondItem="Zy2-1n-3io" secondAttribute="bottom" id="kBD-Mf-q6G"/>
+                            <constraint firstItem="WKA-iB-baa" firstAttribute="baseline" secondItem="nYh-Vo-SCp" secondAttribute="firstBaseline" id="nZ7-oz-Nfh"/>
+                            <constraint firstItem="cjz-dV-kDt" firstAttribute="leading" secondItem="UCQ-xf-yx6" secondAttribute="trailing" constant="8" symbolic="YES" id="na5-hE-ghk"/>
+                            <constraint firstItem="WKA-iB-baa" firstAttribute="leading" secondItem="cjz-dV-kDt" secondAttribute="trailing" constant="8" symbolic="YES" id="sjH-L5-lfK"/>
+                            <constraint firstItem="Zy2-1n-3io" firstAttribute="centerX" secondItem="I3z-rm-Vpx" secondAttribute="centerX" id="wGC-R3-4gQ"/>
+                            <constraint firstItem="y0w-ET-e66" firstAttribute="top" secondItem="rhI-D3-uyx" secondAttribute="top" id="xjG-vB-Jw5"/>
+                            <constraint firstItem="xXX-vh-iUe" firstAttribute="leading" secondItem="OPo-08-dUE" secondAttribute="leading" id="z1A-z0-mbZ"/>
+                            <constraint firstItem="UCQ-xf-yx6" firstAttribute="baseline" secondItem="cjz-dV-kDt" secondAttribute="firstBaseline" id="zgp-4q-Z2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fyc-EF-nbm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAi-Lq-9vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325.5999999999999" y="-307.1964017991005"/>
+        </scene>
+        <!--Coffee Caff View Controller-->
+        <scene sceneID="Kvr-x6-wOt">
+            <objects>
+                <viewController id="che-Nd-fAA" customClass="CoffeeCaffViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CJr-2d-13q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-2W-zsf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel1" text="How much caffeine would" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8h-b1-Dyn" customClass="caffLabel1">
+                                <rect key="frame" x="21" y="124" width="338" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="yDY-jZ-2DQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sweetLabel2" text="you like in your drink?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6l-fh-FXW" customClass="caffLabel2">
+                                <rect key="frame" x="36" y="165" width="417" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="caffScaleLabel" text="on a scale of 0 to 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltQ-sQ-n5I" customClass="caffScale">
+                                <rect key="frame" x="97" y="296" width="181" height="49"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeCaffZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhv-rq-KPy">
+                                <rect key="frame" x="38" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="GiV-4e-av7"/>
+                                    <constraint firstAttribute="height" constant="57" id="LoA-Zn-u1g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="S08-0J-9Rv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeCaffOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIq-Ya-J3W">
+                                <rect key="frame" x="90" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="EjL-9i-Hf8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="nDn-NA-t7h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeCaffTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWy-IS-rGV">
+                                <rect key="frame" x="142" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Edp-rd-9mQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="d4T-OJ-olk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeCaffThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYN-FJ-zvJ">
+                                <rect key="frame" x="194" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="ois-Zx-wz3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="zpZ-jx-TpO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeCaffFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1k-Zk-tEa">
+                                <rect key="frame" x="246" y="353" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="lcd-0n-gjF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="xAQ-pZ-QZ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeCaffFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBn-W2-aU0">
+                                <rect key="frame" x="298" y="353" width="44" height="57"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="39h-WW-6ux"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="Zbe-J6-yxM">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="5Sw-gg-J8a">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="Fa9-R6-2WF">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="eBl-IL-a4e"/>
+                                                <segue destination="54Y-pQ-vHO" kind="show" identifier="toSweetView" id="PRM-ah-8SY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="Nm2-16-f8A">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="d4d-iv-N8P"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="t9R-cy-2Dl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LIq-Ya-J3W" firstAttribute="top" secondItem="ltQ-sQ-n5I" secondAttribute="bottom" constant="8" symbolic="YES" id="1cY-Eg-zcS"/>
+                            <constraint firstItem="LIq-Ya-J3W" firstAttribute="baseline" secondItem="Rhv-rq-KPy" secondAttribute="firstBaseline" id="2gt-cO-hG1"/>
+                            <constraint firstItem="ZwD-2W-zsf" firstAttribute="trailing" secondItem="Zbe-J6-yxM" secondAttribute="trailing" id="3MV-2e-7An"/>
+                            <constraint firstItem="7IE-RH-WI2" firstAttribute="trailing" secondItem="dBn-W2-aU0" secondAttribute="trailing" constant="33" id="3hZ-sH-nmF"/>
+                            <constraint firstItem="O1k-Zk-tEa" firstAttribute="baseline" secondItem="dBn-W2-aU0" secondAttribute="firstBaseline" id="4VX-h6-z9K"/>
+                            <constraint firstItem="dWy-IS-rGV" firstAttribute="leading" secondItem="LIq-Ya-J3W" secondAttribute="trailing" constant="8" symbolic="YES" id="7In-Lb-5n0"/>
+                            <constraint firstItem="y6l-fh-FXW" firstAttribute="leading" secondItem="7IE-RH-WI2" secondAttribute="leading" constant="36" id="80Y-7b-cf2"/>
+                            <constraint firstItem="Zbe-J6-yxM" firstAttribute="bottom" secondItem="7IE-RH-WI2" secondAttribute="bottom" id="9b1-mC-SIy"/>
+                            <constraint firstItem="ltQ-sQ-n5I" firstAttribute="top" secondItem="N8h-b1-Dyn" secondAttribute="bottom" constant="15" id="BOs-Wo-01V"/>
+                            <constraint firstItem="hYN-FJ-zvJ" firstAttribute="baseline" secondItem="O1k-Zk-tEa" secondAttribute="firstBaseline" id="C6K-Gw-Ufb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y6l-fh-FXW" secondAttribute="trailing" constant="-94" id="Eb3-3m-wlM"/>
+                            <constraint firstItem="Rhv-rq-KPy" firstAttribute="top" secondItem="y6l-fh-FXW" secondAttribute="bottom" constant="31" id="FDk-pp-uO7"/>
+                            <constraint firstItem="O1k-Zk-tEa" firstAttribute="leading" secondItem="hYN-FJ-zvJ" secondAttribute="trailing" constant="8" symbolic="YES" id="GcT-df-oZk"/>
+                            <constraint firstItem="N8h-b1-Dyn" firstAttribute="top" secondItem="7IE-RH-WI2" secondAttribute="top" constant="104" id="GnR-qH-PQh"/>
+                            <constraint firstItem="hYN-FJ-zvJ" firstAttribute="leading" secondItem="dWy-IS-rGV" secondAttribute="trailing" constant="8" symbolic="YES" id="H8E-Ko-B08"/>
+                            <constraint firstAttribute="trailing" secondItem="ZwD-2W-zsf" secondAttribute="trailing" id="Hge-2x-MIJ"/>
+                            <constraint firstItem="ZwD-2W-zsf" firstAttribute="leading" secondItem="CJr-2d-13q" secondAttribute="leading" id="J7c-aB-8U8"/>
+                            <constraint firstItem="dWy-IS-rGV" firstAttribute="baseline" secondItem="hYN-FJ-zvJ" secondAttribute="firstBaseline" id="Kwr-Vt-dZK"/>
+                            <constraint firstItem="O1k-Zk-tEa" firstAttribute="baseline" secondItem="dBn-W2-aU0" secondAttribute="baseline" id="Oh4-Zg-bZ2"/>
+                            <constraint firstItem="N8h-b1-Dyn" firstAttribute="trailing" secondItem="CJr-2d-13q" secondAttribute="trailingMargin" id="Psd-6F-lQ6"/>
+                            <constraint firstItem="dWy-IS-rGV" firstAttribute="top" secondItem="hYN-FJ-zvJ" secondAttribute="top" id="Pwb-EM-69q"/>
+                            <constraint firstItem="N8h-b1-Dyn" firstAttribute="leading" secondItem="7IE-RH-WI2" secondAttribute="leading" constant="21" id="Qiv-ub-XJh"/>
+                            <constraint firstItem="y6l-fh-FXW" firstAttribute="top" secondItem="7IE-RH-WI2" secondAttribute="top" constant="145" id="Rgr-UY-o5U"/>
+                            <constraint firstItem="O1k-Zk-tEa" firstAttribute="top" secondItem="dBn-W2-aU0" secondAttribute="top" id="T1U-Ih-cMc"/>
+                            <constraint firstItem="dBn-W2-aU0" firstAttribute="leading" secondItem="O1k-Zk-tEa" secondAttribute="trailing" constant="8" symbolic="YES" id="W62-5C-MdC"/>
+                            <constraint firstItem="ltQ-sQ-n5I" firstAttribute="top" secondItem="ZwD-2W-zsf" secondAttribute="bottom" constant="29" id="XAa-08-xwb"/>
+                            <constraint firstItem="ZwD-2W-zsf" firstAttribute="centerX" secondItem="ltQ-sQ-n5I" secondAttribute="centerX" id="ZfM-Xz-Jse"/>
+                            <constraint firstItem="LIq-Ya-J3W" firstAttribute="baseline" secondItem="dWy-IS-rGV" secondAttribute="baseline" id="aLK-D5-nOO"/>
+                            <constraint firstItem="Rhv-rq-KPy" firstAttribute="top" secondItem="LIq-Ya-J3W" secondAttribute="top" id="aWb-Qw-Elc"/>
+                            <constraint firstItem="LIq-Ya-J3W" firstAttribute="baseline" secondItem="dWy-IS-rGV" secondAttribute="firstBaseline" id="bgK-q1-jQ7"/>
+                            <constraint firstItem="ZwD-2W-zsf" firstAttribute="top" secondItem="CJr-2d-13q" secondAttribute="top" id="cD1-de-Ich"/>
+                            <constraint firstItem="hYN-FJ-zvJ" firstAttribute="baseline" secondItem="O1k-Zk-tEa" secondAttribute="baseline" id="djw-TP-3ha"/>
+                            <constraint firstItem="Rhv-rq-KPy" firstAttribute="baseline" secondItem="LIq-Ya-J3W" secondAttribute="firstBaseline" id="es6-Fa-9Sd"/>
+                            <constraint firstItem="ZwD-2W-zsf" firstAttribute="leading" secondItem="Zbe-J6-yxM" secondAttribute="leading" id="gbi-3B-KaD"/>
+                            <constraint firstItem="Rhv-rq-KPy" firstAttribute="leading" secondItem="7IE-RH-WI2" secondAttribute="leading" constant="38" id="geX-CW-sdR"/>
+                            <constraint firstItem="LIq-Ya-J3W" firstAttribute="top" secondItem="dWy-IS-rGV" secondAttribute="top" id="j0i-WU-L1H"/>
+                            <constraint firstItem="y6l-fh-FXW" firstAttribute="baseline" secondItem="ltQ-sQ-n5I" secondAttribute="firstBaseline" id="mHW-Ht-YpX"/>
+                            <constraint firstItem="dWy-IS-rGV" firstAttribute="baseline" secondItem="hYN-FJ-zvJ" secondAttribute="baseline" id="nZr-SF-LnF"/>
+                            <constraint firstItem="hYN-FJ-zvJ" firstAttribute="top" secondItem="O1k-Zk-tEa" secondAttribute="top" id="sGM-br-5sf"/>
+                            <constraint firstItem="Rhv-rq-KPy" firstAttribute="baseline" secondItem="LIq-Ya-J3W" secondAttribute="baseline" id="wPr-cZ-nst"/>
+                            <constraint firstItem="LIq-Ya-J3W" firstAttribute="leading" secondItem="Rhv-rq-KPy" secondAttribute="trailing" constant="8" symbolic="YES" id="yCc-nz-K4P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7IE-RH-WI2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sER-sB-xtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3076" y="-307.1964017991005"/>
+        </scene>
+        <!--Coffee Dairy View Controller-->
+        <scene sceneID="9Hf-lw-T8T">
+            <objects>
+                <viewController id="zkR-Ww-c7c" customClass="CoffeeDairyViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JZl-eS-Cva">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="aYw-w3-Qnz">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="barTintColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pocket Barista" id="bhC-PF-ZLY">
+                                        <barButtonItem key="leftBarButtonItem" title="Previous" id="jkG-KL-y6k">
+                                            <connections>
+                                                <action selector="prevBtn:" destination="eSP-3F-onx" id="qqZ-My-BB2"/>
+                                                <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="5SK-YZ-Lpx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="Jan-qg-3nP">
+                                            <connections>
+                                                <action selector="homeBtn:" destination="zji-Oc-RTM" id="pSz-AR-HCJ"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeView" id="w9y-AM-Voi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="navyBlockImg" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="WvQ-fm-0qQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dairyLabel2" text="you like in your drink?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBq-Kp-Jlw">
+                                <rect key="frame" x="37" y="162" width="417" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dairyLabel1" text="How much dairy would" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALM-WD-7PG">
+                                <rect key="frame" x="37" y="121" width="338" height="157"/>
+                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="XYa-YF-FL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="35"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dairyScaleLabel" text="on a scale of 0 to 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-yi-YZg">
+                                <rect key="frame" x="94" y="292" width="181" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Adi-Iv-aQQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyZeroBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-aY-8r5">
+                                <rect key="frame" x="35" y="349" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="7Wz-4d-xX7"/>
+                                    <constraint firstAttribute="height" constant="57" id="daD-Ut-1a5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-hY-Gyf">
+                                <rect key="frame" x="87" y="349" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="2gZ-HC-uWH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64e-WC-SUe">
+                                <rect key="frame" x="139" y="349" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="0gW-dr-4MI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cm-J5-icB">
+                                <rect key="frame" x="191" y="349" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="TVG-DK-iVd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL0-fr-LkW">
+                                <rect key="frame" x="243" y="349" width="44" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Wh8-Yn-lX4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV6-WC-BWy">
+                                <rect key="frame" x="295" y="349" width="44" height="57"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="52"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="64e-WC-SUe" firstAttribute="top" secondItem="0Cm-J5-icB" secondAttribute="top" id="08Q-uP-dep"/>
+                            <constraint firstItem="0Cm-J5-icB" firstAttribute="top" secondItem="fL0-fr-LkW" secondAttribute="top" id="3q9-VP-R9x"/>
+                            <constraint firstItem="n6L-aY-8r5" firstAttribute="top" secondItem="PWJ-hY-Gyf" secondAttribute="top" id="4bL-j5-Xff"/>
+                            <constraint firstItem="0Cm-J5-icB" firstAttribute="baseline" secondItem="fL0-fr-LkW" secondAttribute="baseline" id="6I9-Ur-11r"/>
+                            <constraint firstItem="XV6-WC-BWy" firstAttribute="leading" secondItem="fL0-fr-LkW" secondAttribute="trailing" constant="8" symbolic="YES" id="6z0-Bh-wJg"/>
+                            <constraint firstItem="PWJ-hY-Gyf" firstAttribute="baseline" secondItem="64e-WC-SUe" secondAttribute="baseline" id="7yW-BY-tUx"/>
+                            <constraint firstItem="PWJ-hY-Gyf" firstAttribute="top" secondItem="KCE-yi-YZg" secondAttribute="bottom" constant="8" symbolic="YES" id="8hH-al-IP9"/>
+                            <constraint firstItem="WvQ-fm-0qQ" firstAttribute="leading" secondItem="JZl-eS-Cva" secondAttribute="leading" id="CAP-ax-SUE"/>
+                            <constraint firstItem="tds-Yu-QCn" firstAttribute="trailing" secondItem="XV6-WC-BWy" secondAttribute="trailing" constant="36" id="COT-Fz-p7Q"/>
+                            <constraint firstItem="0Cm-J5-icB" firstAttribute="leading" secondItem="64e-WC-SUe" secondAttribute="trailing" constant="8" symbolic="YES" id="G4L-Ra-1rA"/>
+                            <constraint firstItem="n6L-aY-8r5" firstAttribute="baseline" secondItem="PWJ-hY-Gyf" secondAttribute="firstBaseline" id="GFp-94-6Kw"/>
+                            <constraint firstItem="ALM-WD-7PG" firstAttribute="leading" secondItem="tds-Yu-QCn" secondAttribute="leading" constant="37" id="HLe-aC-Qav"/>
+                            <constraint firstItem="KCE-yi-YZg" firstAttribute="leading" secondItem="tds-Yu-QCn" secondAttribute="leading" constant="94" id="Hhq-Ky-iZK"/>
+                            <constraint firstItem="ALM-WD-7PG" firstAttribute="top" secondItem="tds-Yu-QCn" secondAttribute="top" constant="101" id="KPX-Ih-94K"/>
+                            <constraint firstItem="WvQ-fm-0qQ" firstAttribute="trailing" secondItem="ALM-WD-7PG" secondAttribute="trailing" id="LF4-zA-1nk"/>
+                            <constraint firstItem="fL0-fr-LkW" firstAttribute="top" secondItem="XV6-WC-BWy" secondAttribute="top" id="Nx3-A3-g3l"/>
+                            <constraint firstItem="PWJ-hY-Gyf" firstAttribute="leading" secondItem="n6L-aY-8r5" secondAttribute="trailing" constant="8" symbolic="YES" id="OZ9-Og-f7B"/>
+                            <constraint firstItem="fL0-fr-LkW" firstAttribute="baseline" secondItem="XV6-WC-BWy" secondAttribute="baseline" id="RyM-Qx-0y4"/>
+                            <constraint firstItem="SBq-Kp-Jlw" firstAttribute="top" secondItem="tds-Yu-QCn" secondAttribute="top" constant="142" id="SQo-b4-34t"/>
+                            <constraint firstItem="KCE-yi-YZg" firstAttribute="top" secondItem="WvQ-fm-0qQ" secondAttribute="bottom" constant="25" id="UcO-E6-emR"/>
+                            <constraint firstItem="n6L-aY-8r5" firstAttribute="top" secondItem="SBq-Kp-Jlw" secondAttribute="bottom" constant="30" id="Xcf-lx-JSm"/>
+                            <constraint firstItem="fL0-fr-LkW" firstAttribute="leading" secondItem="0Cm-J5-icB" secondAttribute="trailing" constant="8" symbolic="YES" id="bcX-Nt-5db"/>
+                            <constraint firstItem="n6L-aY-8r5" firstAttribute="leading" secondItem="tds-Yu-QCn" secondAttribute="leading" constant="35" id="chZ-es-fc1"/>
+                            <constraint firstItem="WvQ-fm-0qQ" firstAttribute="top" secondItem="JZl-eS-Cva" secondAttribute="top" id="czi-bZ-9du"/>
+                            <constraint firstItem="0Cm-J5-icB" firstAttribute="baseline" secondItem="fL0-fr-LkW" secondAttribute="firstBaseline" id="day-r2-qiL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SBq-Kp-Jlw" secondAttribute="trailing" constant="-95" id="fYd-tN-ALQ"/>
+                            <constraint firstItem="PWJ-hY-Gyf" firstAttribute="top" secondItem="64e-WC-SUe" secondAttribute="top" id="fcD-7u-vxe"/>
+                            <constraint firstItem="64e-WC-SUe" firstAttribute="leading" secondItem="PWJ-hY-Gyf" secondAttribute="trailing" constant="8" symbolic="YES" id="iOq-re-AOG"/>
+                            <constraint firstItem="64e-WC-SUe" firstAttribute="baseline" secondItem="0Cm-J5-icB" secondAttribute="baseline" id="khX-ir-WQB"/>
+                            <constraint firstItem="fL0-fr-LkW" firstAttribute="baseline" secondItem="XV6-WC-BWy" secondAttribute="firstBaseline" id="l1e-Tz-NLx"/>
+                            <constraint firstItem="PWJ-hY-Gyf" firstAttribute="baseline" secondItem="64e-WC-SUe" secondAttribute="firstBaseline" id="nHe-sV-Ce2"/>
+                            <constraint firstItem="KCE-yi-YZg" firstAttribute="top" secondItem="ALM-WD-7PG" secondAttribute="bottom" constant="14" id="nVc-9A-4oU"/>
+                            <constraint firstItem="64e-WC-SUe" firstAttribute="baseline" secondItem="0Cm-J5-icB" secondAttribute="firstBaseline" id="o0S-x2-0Sh"/>
+                            <constraint firstItem="WvQ-fm-0qQ" firstAttribute="leading" secondItem="aYw-w3-Qnz" secondAttribute="leading" id="qWb-Vk-f0r"/>
+                            <constraint firstItem="ALM-WD-7PG" firstAttribute="trailing" secondItem="aYw-w3-Qnz" secondAttribute="trailing" id="sBX-KO-erV"/>
+                            <constraint firstItem="n6L-aY-8r5" firstAttribute="baseline" secondItem="PWJ-hY-Gyf" secondAttribute="baseline" id="sSp-Nr-iyo"/>
+                            <constraint firstItem="aYw-w3-Qnz" firstAttribute="bottom" secondItem="tds-Yu-QCn" secondAttribute="bottom" id="sgB-RE-NMw"/>
+                            <constraint firstAttribute="trailing" secondItem="WvQ-fm-0qQ" secondAttribute="trailing" id="uFj-BL-66a"/>
+                            <constraint firstItem="PWJ-hY-Gyf" firstAttribute="baseline" secondItem="n6L-aY-8r5" secondAttribute="firstBaseline" id="v2r-ja-ehY"/>
+                            <constraint firstItem="ALM-WD-7PG" firstAttribute="leading" secondItem="SBq-Kp-Jlw" secondAttribute="leading" id="vUu-We-Iov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tds-Yu-QCn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oc2-Cv-DBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3789.5999999999999" y="-307.1964017991005"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navyBlock" width="1014" height="592"/>
+        <image name="newPocketBarLogo" width="833" height="848"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="39h-WW-6ux"/>
+        <segue reference="5SK-YZ-Lpx"/>
+        <segue reference="PRM-ah-8SY"/>
+        <segue reference="DQy-Iz-bhz"/>
+        <segue reference="C3r-vy-mwj"/>
+        <segue reference="z0u-ib-LND"/>
+        <segue reference="ZYW-HL-n18"/>
+        <segue reference="wd7-Ue-s3X"/>
+        <segue reference="WbI-Ug-uzB"/>
+        <segue reference="t9R-cy-2Dl"/>
+    </inferredMetricsTieBreakers>
+</document>
