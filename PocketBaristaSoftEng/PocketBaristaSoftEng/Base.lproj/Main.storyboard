@@ -815,6 +815,9 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="NSW-Zv-DDP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-NE-J7B">
                                 <rect key="frame" x="90" y="351" width="44" height="57"/>
@@ -825,6 +828,9 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="0Ve-cR-OYJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywn-YY-8ND">
                                 <rect key="frame" x="142" y="351" width="44" height="57"/>
@@ -835,6 +841,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="fDR-uG-MII"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueY-yg-oI3">
                                 <rect key="frame" x="194" y="351" width="44" height="57"/>
@@ -845,6 +854,9 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="dol-bs-6ch"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTF-8U-bSB">
                                 <rect key="frame" x="246" y="351" width="44" height="57"/>
@@ -855,6 +867,9 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="6u1-NM-Agh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u11-Bv-aHa">
                                 <rect key="frame" x="298" y="351" width="44" height="57"/>
@@ -862,6 +877,9 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="KbQ-Sj-Yb2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -921,20 +939,137 @@
             </objects>
             <point key="canvasLocation" x="3790" y="364"/>
         </scene>
-        <!--View Controller-->
+        <!--Final Coff Drink View Controller-->
         <scene sceneID="p7D-0T-sDO">
             <objects>
-                <viewController id="UPi-yK-eLQ" sceneMemberID="viewController">
+                <viewController id="UPi-yK-eLQ" customClass="finalCoffDrinkViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R8w-Ez-KVd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="eSu-JJ-ObL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="finalCoffeeLabel2" text="max drink is 30 charactersssss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t14-S8-E8I">
+                                <rect key="frame" x="27" y="453" width="306" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="UXs-wv-5Tu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="drinkIconImg" image="drinkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HZT-L5-EOc">
+                                <rect key="frame" x="67" y="234" width="240" height="194"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="nextDrinkBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-0s-X6Y">
+                                <rect key="frame" x="114" y="542" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="17"/>
+                                <state key="normal" title="Find Another Drink">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="your coffee drink is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unw-mH-O0P">
+                                <rect key="frame" x="34" y="133" width="315" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="55R-QM-rtX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t14-S8-E8I" firstAttribute="top" secondItem="HZT-L5-EOc" secondAttribute="bottom" constant="25" id="8SS-jc-zjc"/>
+                            <constraint firstItem="unw-mH-O0P" firstAttribute="trailing" secondItem="t14-S8-E8I" secondAttribute="trailing" id="HNT-89-lwc"/>
+                            <constraint firstItem="HZT-L5-EOc" firstAttribute="top" secondItem="unw-mH-O0P" secondAttribute="bottom" constant="8" symbolic="YES" id="R4f-in-VdI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7CF-KW-LRv"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gK0-Us-kZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4631" y="32"/>
+            <point key="canvasLocation" x="4521" y="-307"/>
+        </scene>
+        <!--Final Tea Drink View Controller-->
+        <scene sceneID="GmC-p7-dhj">
+            <objects>
+                <viewController id="j6D-dN-jWb" customClass="FinalTeaDrinkViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ctg-43-kVG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="bdp-K2-zYF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="teaDrinkLabel1" text="your tea drink is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJk-ic-HF8">
+                                <rect key="frame" x="49" y="133" width="284" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="Tjy-a2-Rl5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="teaDrinkLabel2" text="max drink is 30 charactersssss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-Ip-2kw">
+                                <rect key="frame" x="27" y="453" width="306" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="gWc-eO-KD1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="nextDrinkBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz5-Fj-d6H">
+                                <rect key="frame" x="114" y="542" width="155" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ttx-zj-7JC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="17"/>
+                                <state key="normal" title="Find Another Drink">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="anotherDrinkView" id="vbJ-pj-Lga"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="drinkIconImg" image="drinkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4XX-8i-IJw">
+                                <rect key="frame" x="80" y="234" width="240" height="194"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cJk-ic-HF8" firstAttribute="trailing" secondItem="g3k-Ip-2kw" secondAttribute="trailing" id="1eI-eC-6aU"/>
+                            <constraint firstItem="bdp-K2-zYF" firstAttribute="top" secondItem="Ctg-43-kVG" secondAttribute="top" id="1sZ-6D-ml4"/>
+                            <constraint firstItem="g3k-Ip-2kw" firstAttribute="leading" secondItem="S0k-gI-MaZ" secondAttribute="leading" constant="27" id="Bcg-PY-jF8"/>
+                            <constraint firstItem="S0k-gI-MaZ" firstAttribute="trailing" secondItem="cJk-ic-HF8" secondAttribute="trailing" constant="42" id="GW4-Fx-pMD"/>
+                            <constraint firstItem="cJk-ic-HF8" firstAttribute="leading" secondItem="S0k-gI-MaZ" secondAttribute="leading" constant="49" id="JbQ-z0-eoB"/>
+                            <constraint firstItem="S0k-gI-MaZ" firstAttribute="bottom" secondItem="mz5-Fj-d6H" secondAttribute="bottom" constant="95" id="K5c-57-7nk"/>
+                            <constraint firstItem="mz5-Fj-d6H" firstAttribute="leading" secondItem="S0k-gI-MaZ" secondAttribute="leading" constant="114" id="QYO-h0-qKT"/>
+                            <constraint firstItem="g3k-Ip-2kw" firstAttribute="top" secondItem="4XX-8i-IJw" secondAttribute="bottom" constant="25" id="Rxk-se-Pf2"/>
+                            <constraint firstItem="4XX-8i-IJw" firstAttribute="top" secondItem="cJk-ic-HF8" secondAttribute="bottom" constant="8" symbolic="YES" id="TOU-Yk-c5Q"/>
+                            <constraint firstItem="4XX-8i-IJw" firstAttribute="leading" secondItem="S0k-gI-MaZ" secondAttribute="leading" constant="67" id="aTf-6Y-0Xl"/>
+                            <constraint firstItem="cJk-ic-HF8" firstAttribute="top" secondItem="S0k-gI-MaZ" secondAttribute="top" constant="113" id="fQX-aK-gF1"/>
+                            <constraint firstItem="bdp-K2-zYF" firstAttribute="bottom" secondItem="S0k-gI-MaZ" secondAttribute="bottom" id="hW8-2g-znC"/>
+                            <constraint firstItem="bdp-K2-zYF" firstAttribute="centerX" secondItem="4XX-8i-IJw" secondAttribute="centerX" id="m8V-82-I6O"/>
+                            <constraint firstItem="mz5-Fj-d6H" firstAttribute="top" secondItem="g3k-Ip-2kw" secondAttribute="bottom" constant="8" symbolic="YES" id="pe9-E0-QoW"/>
+                            <constraint firstItem="bdp-K2-zYF" firstAttribute="leading" secondItem="Ctg-43-kVG" secondAttribute="leading" id="xTm-oy-mQz"/>
+                            <constraint firstAttribute="trailing" secondItem="bdp-K2-zYF" secondAttribute="trailing" id="xf4-vo-k3f"/>
+                            <constraint firstItem="cJk-ic-HF8" firstAttribute="centerX" secondItem="mz5-Fj-d6H" secondAttribute="centerX" id="xsZ-dG-01m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S0k-gI-MaZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXy-Ba-Wse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520.8000000000002" y="363.86806596701655"/>
         </scene>
         <!--Coffee View Controller-->
         <scene sceneID="jKo-NZ-dyq">
@@ -1464,6 +1599,9 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="699-BV-KmV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-hY-Gyf">
                                 <rect key="frame" x="87" y="349" width="44" height="57"/>
@@ -1474,6 +1612,9 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="eXy-3y-aQ8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64e-WC-SUe">
                                 <rect key="frame" x="139" y="349" width="44" height="57"/>
@@ -1484,6 +1625,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="tSd-dw-29X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cm-J5-icB">
                                 <rect key="frame" x="191" y="349" width="44" height="57"/>
@@ -1494,6 +1638,9 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="6Vh-B4-xh4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL0-fr-LkW">
                                 <rect key="frame" x="243" y="349" width="44" height="57"/>
@@ -1504,6 +1651,9 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="J2k-1q-zcL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV6-WC-BWy">
                                 <rect key="frame" x="295" y="349" width="44" height="57"/>
@@ -1511,6 +1661,9 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="hKR-dz-WYF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1563,21 +1716,118 @@
             </objects>
             <point key="canvasLocation" x="3789.5999999999999" y="-307.1964017991005"/>
         </scene>
+        <!--Final Coff Drink View Controller-->
+        <scene sceneID="L56-Up-l7u">
+            <objects>
+                <viewController id="oZx-El-LZu" customClass="FinalCoffDrinkViewController" customModule="PocketBaristaSoftEng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLb-Q6-706">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max drink is 30 charactersssss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erC-eX-O3H">
+                                <rect key="frame" x="34" y="438" width="307" height="81"/>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drinkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rKn-F6-kf5">
+                                <rect key="frame" x="74" y="219" width="241" height="194"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="your coffee drink is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-rz-msv">
+                                <rect key="frame" x="37" y="116" width="315" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="fex-lX-vff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max drink is 30 charactersssss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTI-OZ-6mP">
+                                <rect key="frame" x="34" y="436" width="307" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="ECE-So-QTf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="23"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drinkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ZCB-DJ-7zd">
+                                <rect key="frame" x="74" y="217" width="241" height="194"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="nextDrinkBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltj-8f-q1L">
+                                <rect key="frame" x="110" y="525" width="156" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="euq-go-A1m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="17"/>
+                                <state key="normal" title="Find Another Drink">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="anotherDrinkView" id="6im-b9-LvE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="your coffee drink is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x75-xw-8IY">
+                                <rect key="frame" x="34" y="116" width="329" height="93"/>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="42"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TtT-rz-msv" firstAttribute="leading" secondItem="lzh-Ii-9Qc" secondAttribute="leading" constant="30" id="0nx-k0-DVW"/>
+                            <constraint firstItem="Ltj-8f-q1L" firstAttribute="leading" secondItem="lzh-Ii-9Qc" secondAttribute="leading" constant="110" id="1lE-Xa-G1T"/>
+                            <constraint firstItem="ZCB-DJ-7zd" firstAttribute="trailing" secondItem="rKn-F6-kf5" secondAttribute="trailing" id="2TZ-US-U6f"/>
+                            <constraint firstItem="ZCB-DJ-7zd" firstAttribute="top" secondItem="TtT-rz-msv" secondAttribute="bottom" constant="8" symbolic="YES" id="5Ta-Je-bfn"/>
+                            <constraint firstItem="ZCB-DJ-7zd" firstAttribute="leading" secondItem="rKn-F6-kf5" secondAttribute="leading" id="6gX-Ej-AZy"/>
+                            <constraint firstItem="x75-xw-8IY" firstAttribute="trailing" secondItem="XLb-Q6-706" secondAttribute="trailingMargin" id="6oY-n2-qDU"/>
+                            <constraint firstItem="Ltj-8f-q1L" firstAttribute="top" secondItem="KTI-OZ-6mP" secondAttribute="bottom" constant="8" symbolic="YES" id="B4N-Be-LyK"/>
+                            <constraint firstItem="lzh-Ii-9Qc" firstAttribute="bottom" secondItem="Ltj-8f-q1L" secondAttribute="bottom" constant="112" id="KSF-Qs-MXO"/>
+                            <constraint firstItem="KTI-OZ-6mP" firstAttribute="trailing" secondItem="erC-eX-O3H" secondAttribute="trailing" id="Mjo-PL-l7F"/>
+                            <constraint firstItem="KTI-OZ-6mP" firstAttribute="leading" secondItem="erC-eX-O3H" secondAttribute="leading" id="NnI-15-6Of"/>
+                            <constraint firstItem="ZCB-DJ-7zd" firstAttribute="top" secondItem="x75-xw-8IY" secondAttribute="bottom" constant="6" id="RGm-fO-ADg"/>
+                            <constraint firstItem="erC-eX-O3H" firstAttribute="top" secondItem="rKn-F6-kf5" secondAttribute="bottom" constant="25" id="SyC-wV-013"/>
+                            <constraint firstItem="ZCB-DJ-7zd" firstAttribute="leading" secondItem="lzh-Ii-9Qc" secondAttribute="leading" constant="74" id="Uqz-fB-CC8"/>
+                            <constraint firstItem="KTI-OZ-6mP" firstAttribute="leading" secondItem="lzh-Ii-9Qc" secondAttribute="leading" constant="34" id="VCe-Hr-2j1"/>
+                            <constraint firstItem="TtT-rz-msv" firstAttribute="centerX" secondItem="KTI-OZ-6mP" secondAttribute="centerX" id="cOx-c9-aoJ"/>
+                            <constraint firstItem="KTI-OZ-6mP" firstAttribute="top" secondItem="rKn-F6-kf5" secondAttribute="bottom" constant="23" id="d5z-ao-AHB"/>
+                            <constraint firstItem="erC-eX-O3H" firstAttribute="centerX" secondItem="Ltj-8f-q1L" secondAttribute="centerX" id="hDi-QB-0fQ"/>
+                            <constraint firstItem="TtT-rz-msv" firstAttribute="top" secondItem="lzh-Ii-9Qc" secondAttribute="top" constant="96" id="i8a-v2-wm2"/>
+                            <constraint firstItem="TtT-rz-msv" firstAttribute="leading" secondItem="x75-xw-8IY" secondAttribute="leading" id="k30-xH-eRS"/>
+                            <constraint firstItem="rKn-F6-kf5" firstAttribute="top" secondItem="x75-xw-8IY" secondAttribute="bottom" constant="8" symbolic="YES" id="rCp-mJ-v8f"/>
+                            <constraint firstItem="x75-xw-8IY" firstAttribute="centerX" secondItem="ZCB-DJ-7zd" secondAttribute="centerX" id="tM6-xk-H2P"/>
+                            <constraint firstItem="KTI-OZ-6mP" firstAttribute="top" secondItem="ZCB-DJ-7zd" secondAttribute="bottom" constant="25" id="u81-VY-af1"/>
+                            <constraint firstItem="x75-xw-8IY" firstAttribute="top" secondItem="lzh-Ii-9Qc" secondAttribute="top" constant="98" id="yrC-7B-6Oj"/>
+                            <constraint firstItem="Ltj-8f-q1L" firstAttribute="top" secondItem="erC-eX-O3H" secondAttribute="bottom" constant="6" id="zO4-ow-9kO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lzh-Ii-9Qc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Im-xw-aHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520.8000000000002" y="-307.1964017991005"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="drinkIcon" width="288" height="299"/>
         <image name="navyBlock" width="1014" height="592"/>
         <image name="newPocketBarLogo" width="833" height="848"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="699-BV-KmV"/>
         <segue reference="39h-WW-6ux"/>
         <segue reference="5SK-YZ-Lpx"/>
         <segue reference="PRM-ah-8SY"/>
         <segue reference="DQy-Iz-bhz"/>
+        <segue reference="dol-bs-6ch"/>
         <segue reference="C3r-vy-mwj"/>
-        <segue reference="z0u-ib-LND"/>
+        <segue reference="6Er-Tj-1xl"/>
         <segue reference="ZYW-HL-n18"/>
         <segue reference="wd7-Ue-s3X"/>
-        <segue reference="WbI-Ug-uzB"/>
-        <segue reference="t9R-cy-2Dl"/>
+        <segue reference="jTR-Vv-Pyg"/>
+        <segue reference="vbJ-pj-Lga"/>
     </inferredMetricsTieBreakers>
 </document>
