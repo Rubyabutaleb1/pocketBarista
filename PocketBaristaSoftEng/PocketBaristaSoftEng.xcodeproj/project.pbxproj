@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F502711C20A2DF3500C9A50E /* FinalTeaDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502711B20A2DF3500C9A50E /* FinalTeaDrinkViewController.swift */; };
 		F53EC20E208AAF7E00A8FF3F /* TeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EC20D208AAF7E00A8FF3F /* TeaViewController.swift */; };
+		F5C64A4A20992B7100FB898F /* FinalCoffDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C64A4920992B7100FB898F /* FinalCoffDrinkViewController.swift */; };
 		F5D0B1162087FAD800338E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0B1152087FAD800338E13 /* AppDelegate.swift */; };
 		F5D0B1182087FAD800338E13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0B1172087FAD800338E13 /* HomeViewController.swift */; };
 		F5D0B11B2087FAD800338E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D0B1192087FAD800338E13 /* Main.storyboard */; };
@@ -20,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F502711B20A2DF3500C9A50E /* FinalTeaDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalTeaDrinkViewController.swift; sourceTree = "<group>"; };
 		F53EC20D208AAF7E00A8FF3F /* TeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewController.swift; sourceTree = "<group>"; };
+		F5C64A4920992B7100FB898F /* FinalCoffDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCoffDrinkViewController.swift; sourceTree = "<group>"; };
 		F5D0B1122087FAD800338E13 /* PocketBaristaSoftEng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBaristaSoftEng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D0B1152087FAD800338E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D0B1172087FAD800338E13 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				F5D0B12C20881BDB00338E13 /* FindDrinkViewController.swift */,
 				F5D0B12E208828B000338E13 /* CoffeeViewController.swift */,
 				F53EC20D208AAF7E00A8FF3F /* TeaViewController.swift */,
+				F5C64A4920992B7100FB898F /* FinalCoffDrinkViewController.swift */,
+				F502711B20A2DF3500C9A50E /* FinalTeaDrinkViewController.swift */,
 				F5D0B1192087FAD800338E13 /* Main.storyboard */,
 				F5D0B11C2087FAD800338E13 /* Assets.xcassets */,
 				F5D0B11E2087FAD800338E13 /* LaunchScreen.storyboard */,
@@ -161,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C64A4A20992B7100FB898F /* FinalCoffDrinkViewController.swift in Sources */,
 				F5D0B12F208828B000338E13 /* CoffeeViewController.swift in Sources */,
+				F502711C20A2DF3500C9A50E /* FinalTeaDrinkViewController.swift in Sources */,
 				F5D0B1182087FAD800338E13 /* HomeViewController.swift in Sources */,
 				F53EC20E208AAF7E00A8FF3F /* TeaViewController.swift in Sources */,
 				F5D0B12D20881BDB00338E13 /* FindDrinkViewController.swift in Sources */,
