@@ -13,9 +13,35 @@ class Tea{
     var caffLevel = 0
     var sweetLevel = 0
     var dairyLevel = 0
-    var drinkTemp: String?
+    var drinkTemp = String()
+    
+    //getCaff Function
+    public func getCaff() -> Int
+    {
+        return caffLevel
+    }
+    
+    //getSweet Function
+    public func getSweet() -> Int
+    {
+        return sweetLevel
+    }
+    //getDairy Function
+    
+    public func getDairy() -> Int
+    {
+        return dairyLevel
+    }
+    
+    //getTemp Function
+    public func getTemp() -> String
+    {
+        return drinkTemp
+    }
+    
 }
 let teaDrink = Tea()
+
 
 //hot or iced tea view controller class
 class TeaViewController: UIViewController {
@@ -28,12 +54,19 @@ class TeaViewController: UIViewController {
     @IBAction func homeBtn(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "toHomeView", sender: nil)
     }
-    @IBAction func icedTeaBtn(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "toSweetView", sender: nil)
+    
+    @IBAction func icedTea(_ sender: Any)
+    {
+        teaDrink.drinkTemp = ICED
+        performSegue(withIdentifier: "toSweetView", sender: self)
     }
-    @IBAction func hotTeaBtn(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "toSweetView", sender: nil)
+    
+    @IBAction func hotTea(_ sender: Any)
+    {
+        teaDrink.drinkTemp = HOT
+        performSegue(withIdentifier: "toSweetView", sender: self)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -63,31 +96,48 @@ class TeaSweetViewController: UIViewController {
         performSegue(withIdentifier: "toHomeView", sender: nil)
     }
     
-    //buttons
-    @IBAction func teaSweetZeroBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func zeroSweet(_ sender: Any)
+    {
         teaDrink.sweetLevel = 0
-        performSegue(withIdentifier: "toCaffView", sender: nil)
+        performSegue(withIdentifier: "toCaffView", sender: self)
     }
-    @IBAction func teaSweetOneBtn(_ sender: UIBarButtonItem) {
+    
+    
+    @IBAction func oneSweet(_ sender: Any)
+    {
         teaDrink.sweetLevel = 1
-        performSegue(withIdentifier: "toCaffView", sender: nil)
+        performSegue(withIdentifier: "toCaffView", sender: self)
     }
-    @IBAction func teaSweetTwoBtn(_ sender: UIBarButtonItem) {
+    
+    
+    @IBAction func twoSweet(_ sender: Any)
+    {
         teaDrink.sweetLevel = 2
-        performSegue(withIdentifier: "toCaffView", sender: nil)
+        performSegue(withIdentifier: "toCaffView", sender: self)
     }
-    @IBAction func teaSweetThreeBtn(_ sender: UIBarButtonItem) {
+    
+    
+    @IBAction func threeSweet(_ sender: Any)
+    {
         teaDrink.sweetLevel = 3
-        performSegue(withIdentifier: "toCaffView", sender: nil)
+        performSegue(withIdentifier: "toCaffView", sender: self)
     }
-    @IBAction func teaSweetFourBtn(_ sender: UIBarButtonItem) {
+    
+    
+    @IBAction func fourSweet(_ sender: Any)
+    {
         teaDrink.sweetLevel = 4
-        performSegue(withIdentifier: "toCaffView", sender: nil)
+        performSegue(withIdentifier: "toCaffView", sender: self)
     }
-    @IBAction func teaSweetFiveBtn(_ sender: UIBarButtonItem) {
+    
+    
+    @IBAction func fiveSweet(_ sender: Any)
+    {
         teaDrink.sweetLevel = 5
-        performSegue(withIdentifier: "toCaffView", sender: nil)
+        performSegue(withIdentifier: "toCaffView", sender: self)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -113,33 +163,48 @@ class TeaCaffViewController: UIViewController {
     @IBAction func homeBtn(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "toHomeView", sender: nil)
     }
-    //buttons
-    @IBAction func teaCaffZeroBtn(_ sender: UIBarButtonItem) {
+    
+    
+    
+    @IBAction func zeroCaf(_ sender: Any)
+    {
         teaDrink.caffLevel = 0
-        performSegue(withIdentifier: "toDairyView", sender: nil)
+        performSegue(withIdentifier: "toDairyView", sender: self)
     }
-    @IBAction func teaCaffOneBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func oneCaf(_ sender: Any)
+    {
         teaDrink.caffLevel = 1
-        performSegue(withIdentifier: "toDairyView", sender: nil)
+        performSegue(withIdentifier: "toDairyView", sender: self)
     }
-    @IBAction func teaCaffTwoBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func twoCaf(_ sender: Any)
+    {
         teaDrink.caffLevel = 2
-        performSegue(withIdentifier: "toDairyView", sender: nil)
+        performSegue(withIdentifier: "toDairyView", sender: self)
     }
-    @IBAction func teaCaffThreeBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func threeCaf(_ sender: Any)
+    {
         teaDrink.caffLevel = 3
-        performSegue(withIdentifier: "toDairyView", sender: nil)
+        performSegue(withIdentifier: "toDairyView", sender: self)
     }
-    @IBAction func teaCaffFourBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func fourCaf(_ sender: Any)
+    {
         teaDrink.caffLevel = 4
-        performSegue(withIdentifier: "toDairyView", sender: nil)
+        performSegue(withIdentifier: "toDairyView", sender: self)
     }
-    @IBAction func teaCaffFiveBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func fiveCaf(_ sender: Any)
+    {
         teaDrink.caffLevel = 5
-        performSegue(withIdentifier: "toDairyView", sender: nil)
+        performSegue(withIdentifier: "toDairyView", sender: self)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -164,31 +229,43 @@ class TeaDairyViewController: UIViewController {
     @IBAction func homeBtn(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "toHomeView", sender: nil)
     }
-    //buttons
-    @IBAction func teaDairyZeroBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func zeroDairy(_ sender: Any)
+    {
         teaDrink.dairyLevel = 0
-        performSegue(withIdentifier: "toDrinkView", sender: nil)
+        performSegue(withIdentifier: "toDrinkView", sender: self)
     }
-    @IBAction func teaDairyOneBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func oneDairy(_ sender: Any)
+    {
         teaDrink.dairyLevel = 1
-        performSegue(withIdentifier: "toDrinkView", sender: nil)
+        performSegue(withIdentifier: "toDrinkView", sender: self)
     }
-    @IBAction func teaDairyTwoBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func twoDairy(_ sender: Any)
+    {
         teaDrink.dairyLevel = 2
-        performSegue(withIdentifier: "toDrinkView", sender: nil)
+        performSegue(withIdentifier: "toDrinkView", sender: self)
     }
-    @IBAction func teaDairyThreeBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func threeDairy(_ sender: Any)
+    {
         teaDrink.dairyLevel = 3
-        performSegue(withIdentifier: "toDrinkView", sender: nil)
+        performSegue(withIdentifier: "toDrinkView", sender: self)
     }
-    @IBAction func teaDairyFourBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func fourDairy(_ sender: Any)
+    {
         teaDrink.dairyLevel = 4
-        performSegue(withIdentifier: "toDrinkView", sender: nil)
+        performSegue(withIdentifier: "toDrinkView", sender: self)
     }
-    @IBAction func teaDairyFiveBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func fiveDairy(_ sender: Any)
+    {
         teaDrink.dairyLevel = 5
-        performSegue(withIdentifier: "toDrinkView", sender: nil)
+        performSegue(withIdentifier: "toDrinkView", sender: self)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

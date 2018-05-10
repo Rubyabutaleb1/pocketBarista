@@ -316,6 +316,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="icedTea:" destination="NE1-GZ-dpM" eventType="touchUpInside" id="IZ0-wC-HCo"/>
                                     <segue destination="U1u-eT-K4a" kind="show" identifier="toSweetView" id="5aq-3T-rIE"/>
                                 </connections>
                             </button>
@@ -326,6 +327,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="hotTea:" destination="NE1-GZ-dpM" eventType="touchUpInside" id="nnk-Io-eFU"/>
                                     <segue destination="U1u-eT-K4a" kind="show" identifier="toSweetView" id="ZYW-HL-n18"/>
                                 </connections>
                             </button>
@@ -406,6 +408,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="zeroSweet:" destination="U1u-eT-K4a" eventType="touchUpInside" id="Kv9-au-qIc"/>
                                     <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="ZGb-Mm-o9u"/>
                                 </connections>
                             </button>
@@ -419,6 +422,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="oneSweet:" destination="U1u-eT-K4a" eventType="touchUpInside" id="3WD-wo-zkm"/>
                                     <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="wag-CH-5Ch"/>
                                 </connections>
                             </button>
@@ -432,6 +436,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="twoSweet:" destination="U1u-eT-K4a" eventType="touchUpInside" id="uza-zm-VLT"/>
                                     <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="BeG-bU-hja"/>
                                 </connections>
                             </button>
@@ -445,6 +450,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="threeSweet:" destination="U1u-eT-K4a" eventType="touchUpInside" id="AdT-0d-0lK"/>
                                     <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="zWv-gG-TRu"/>
                                 </connections>
                             </button>
@@ -458,6 +464,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fourSweet:" destination="U1u-eT-K4a" eventType="touchUpInside" id="OwH-dB-h2J"/>
                                     <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="fON-qv-UlA"/>
                                 </connections>
                             </button>
@@ -468,6 +475,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fiveSweet:" destination="U1u-eT-K4a" eventType="touchUpInside" id="yJ0-vD-KW7"/>
                                     <segue destination="7Yp-dS-qeG" kind="show" identifier="toCaffView" id="6Er-Tj-1xl"/>
                                 </connections>
                             </button>
@@ -594,6 +602,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="zeroCaf:" destination="7Yp-dS-qeG" eventType="touchUpInside" id="xUu-jT-Oa0"/>
                                     <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="qw3-Yx-mXV"/>
                                 </connections>
                             </button>
@@ -607,6 +616,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="oneCaf:" destination="7Yp-dS-qeG" eventType="touchUpInside" id="DQ9-Oj-EMA"/>
                                     <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="irh-jB-Scd"/>
                                 </connections>
                             </button>
@@ -620,6 +630,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="twoCaf:" destination="7Yp-dS-qeG" eventType="touchUpInside" id="IJU-qG-KWg"/>
                                     <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="WNf-x8-ksh"/>
                                 </connections>
                             </button>
@@ -633,6 +644,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="threeCaf:" destination="7Yp-dS-qeG" eventType="touchUpInside" id="23d-78-FeP"/>
                                     <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="o9J-3A-2MR"/>
                                 </connections>
                             </button>
@@ -646,6 +658,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fourCaf:" destination="7Yp-dS-qeG" eventType="touchUpInside" id="oBl-vR-WMW"/>
                                     <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="dG9-T7-wyc"/>
                                 </connections>
                             </button>
@@ -656,6 +669,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fiveCaf:" destination="7Yp-dS-qeG" eventType="touchUpInside" id="tT7-UB-gsq"/>
                                     <segue destination="Ea4-mD-bAe" kind="show" identifier="toDairyView" id="C3r-vy-mwj"/>
                                 </connections>
                             </button>
@@ -816,7 +830,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="NSW-Zv-DDP"/>
+                                    <action selector="zeroDairy:" destination="Ea4-mD-bAe" eventType="touchUpInside" id="20l-dl-h2F"/>
+                                    <segue destination="j6D-dN-jWb" kind="show" id="IzD-H3-GUc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="teaDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-NE-J7B">
@@ -829,6 +844,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="oneDairy:" destination="Ea4-mD-bAe" eventType="touchUpInside" id="EYs-kf-suQ"/>
                                     <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="0Ve-cR-OYJ"/>
                                 </connections>
                             </button>
@@ -842,6 +858,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="twoDairy:" destination="Ea4-mD-bAe" eventType="touchUpInside" id="9gV-wG-ofx"/>
                                     <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="fDR-uG-MII"/>
                                 </connections>
                             </button>
@@ -855,6 +872,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="threeDairy:" destination="Ea4-mD-bAe" eventType="touchUpInside" id="Jqg-pP-yAb"/>
                                     <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="dol-bs-6ch"/>
                                 </connections>
                             </button>
@@ -868,6 +886,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fourDairy:" destination="Ea4-mD-bAe" eventType="touchUpInside" id="rvb-eH-0Wy"/>
                                     <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="6u1-NM-Agh"/>
                                 </connections>
                             </button>
@@ -878,6 +897,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fiveDairy:" destination="Ea4-mD-bAe" eventType="touchUpInside" id="TgZ-Pf-qLO"/>
                                     <segue destination="j6D-dN-jWb" kind="show" identifier="toDrinkView" id="KbQ-Sj-Yb2"/>
                                 </connections>
                             </button>
@@ -947,12 +967,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="eSu-JJ-ObL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navyBlock" translatesAutoresizingMaskIntoConstraints="NO" id="eSu-JJ-ObL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="finalCoffeeLabel2" text="max drink is 30 charactersssss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t14-S8-E8I">
-                                <rect key="frame" x="27" y="453" width="306" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="finalCoffeeLabel2" text="max drink is 30 charactersssss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t14-S8-E8I">
+                                <rect key="frame" x="27" y="453" width="322" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="UXs-wv-5Tu"/>
                                 </constraints>
@@ -960,12 +979,14 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="drinkIconImg" image="drinkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HZT-L5-EOc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="drinkIconImg" image="drinkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HZT-L5-EOc">
                                 <rect key="frame" x="67" y="234" width="240" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="pXi-4k-OIg"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="nextDrinkBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-0s-X6Y">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="nextDrinkBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-0s-X6Y">
                                 <rect key="frame" x="114" y="542" width="155" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="TheLightFont" family="The Light Font" pointSize="17"/>
                                 <state key="normal" title="Find Another Drink">
@@ -973,7 +994,7 @@
                                     <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="your coffee drink is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unw-mH-O0P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your coffee drink is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unw-mH-O0P">
                                 <rect key="frame" x="34" y="133" width="315" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="93" id="55R-QM-rtX"/>
@@ -985,9 +1006,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="unw-mH-O0P" firstAttribute="centerX" secondItem="rGO-0s-X6Y" secondAttribute="centerX" id="30z-e5-UAq"/>
+                            <constraint firstItem="t14-S8-E8I" firstAttribute="leading" secondItem="7CF-KW-LRv" secondAttribute="leading" constant="27" id="4Eh-kO-8Lg"/>
                             <constraint firstItem="t14-S8-E8I" firstAttribute="top" secondItem="HZT-L5-EOc" secondAttribute="bottom" constant="25" id="8SS-jc-zjc"/>
+                            <constraint firstItem="eSu-JJ-ObL" firstAttribute="leading" secondItem="R8w-Ez-KVd" secondAttribute="leading" id="FyK-x9-cer"/>
+                            <constraint firstItem="HZT-L5-EOc" firstAttribute="top" secondItem="R8w-Ez-KVd" secondAttribute="top" constant="234" id="HKE-ye-oMv"/>
                             <constraint firstItem="unw-mH-O0P" firstAttribute="trailing" secondItem="t14-S8-E8I" secondAttribute="trailing" id="HNT-89-lwc"/>
                             <constraint firstItem="HZT-L5-EOc" firstAttribute="top" secondItem="unw-mH-O0P" secondAttribute="bottom" constant="8" symbolic="YES" id="R4f-in-VdI"/>
+                            <constraint firstItem="HZT-L5-EOc" firstAttribute="centerX" secondItem="R8w-Ez-KVd" secondAttribute="centerX" id="Ryg-Al-pTf"/>
+                            <constraint firstItem="eSu-JJ-ObL" firstAttribute="top" secondItem="R8w-Ez-KVd" secondAttribute="top" id="ZQn-wb-bDF"/>
+                            <constraint firstItem="eSu-JJ-ObL" firstAttribute="bottom" secondItem="7CF-KW-LRv" secondAttribute="bottom" id="b50-2R-Zkt"/>
+                            <constraint firstItem="HZT-L5-EOc" firstAttribute="leading" secondItem="7CF-KW-LRv" secondAttribute="leading" constant="67" id="fCG-yQ-9T3"/>
+                            <constraint firstItem="rGO-0s-X6Y" firstAttribute="top" secondItem="t14-S8-E8I" secondAttribute="bottom" constant="8" symbolic="YES" id="qCi-tK-Isd"/>
+                            <constraint firstItem="unw-mH-O0P" firstAttribute="leading" secondItem="7CF-KW-LRv" secondAttribute="leading" constant="34" id="rzA-Mh-XeM"/>
+                            <constraint firstItem="HZT-L5-EOc" firstAttribute="centerX" secondItem="eSu-JJ-ObL" secondAttribute="centerX" id="vlv-BU-ENI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7CF-KW-LRv"/>
                     </view>
@@ -1124,6 +1156,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="hot:" destination="zji-Oc-RTM" eventType="touchUpInside" id="D8u-et-KvQ"/>
                                     <segue destination="54Y-pQ-vHO" kind="show" identifier="toSweetView" id="nC2-xA-dpv"/>
                                 </connections>
                             </button>
@@ -1137,6 +1170,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="iced:" destination="zji-Oc-RTM" eventType="touchUpInside" id="D0t-gd-Vo3"/>
                                     <segue destination="54Y-pQ-vHO" kind="show" identifier="toSweetView" id="Gck-9K-d86"/>
                                 </connections>
                             </button>
@@ -1228,6 +1262,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="zeroSweet:" destination="54Y-pQ-vHO" eventType="touchUpInside" id="WYI-jq-xHA"/>
                                     <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="VIZ-gC-9qQ"/>
                                 </connections>
                             </button>
@@ -1241,6 +1276,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="oneSweet:" destination="54Y-pQ-vHO" eventType="touchUpInside" id="cKX-Xh-5or"/>
                                     <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="ILc-to-u1R"/>
                                 </connections>
                             </button>
@@ -1254,6 +1290,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="twoSweet:" destination="54Y-pQ-vHO" eventType="touchUpInside" id="ZSf-eJ-50p"/>
                                     <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="MST-hk-wdA"/>
                                 </connections>
                             </button>
@@ -1267,6 +1304,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="threeSweet:" destination="54Y-pQ-vHO" eventType="touchUpInside" id="yLa-Dd-H1i"/>
                                     <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="vJD-UZ-Pcf"/>
                                 </connections>
                             </button>
@@ -1280,6 +1318,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fourSweet:" destination="54Y-pQ-vHO" eventType="touchUpInside" id="6HK-sX-wuR"/>
                                     <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="9L4-bN-GrO"/>
                                 </connections>
                             </button>
@@ -1290,6 +1329,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fiveSweet:" destination="54Y-pQ-vHO" eventType="touchUpInside" id="6SO-MT-UlI"/>
                                     <segue destination="che-Nd-fAA" kind="show" identifier="toCaffView" id="gGD-Z7-4ar"/>
                                 </connections>
                             </button>
@@ -1396,6 +1436,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="zeroCaffeine:" destination="che-Nd-fAA" eventType="touchUpInside" id="rPv-qN-ijK"/>
                                     <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="S08-0J-9Rv"/>
                                 </connections>
                             </button>
@@ -1409,6 +1450,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="oneCaffeine:" destination="che-Nd-fAA" eventType="touchUpInside" id="1sx-Jr-A1O"/>
                                     <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="nDn-NA-t7h"/>
                                 </connections>
                             </button>
@@ -1422,6 +1464,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="twoCaffeine:" destination="che-Nd-fAA" eventType="touchUpInside" id="ok8-Cf-Fq4"/>
                                     <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="d4T-OJ-olk"/>
                                 </connections>
                             </button>
@@ -1435,6 +1478,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="threeCaffeine:" destination="che-Nd-fAA" eventType="touchUpInside" id="YTY-HP-emB"/>
                                     <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="zpZ-jx-TpO"/>
                                 </connections>
                             </button>
@@ -1448,6 +1492,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fourCaffeine:" destination="che-Nd-fAA" eventType="touchUpInside" id="Bm9-xx-JRB"/>
                                     <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="xAQ-pZ-QZ6"/>
                                 </connections>
                             </button>
@@ -1458,6 +1503,7 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="fiveCaffeine:" destination="che-Nd-fAA" eventType="touchUpInside" id="PX2-RL-DvN"/>
                                     <segue destination="zkR-Ww-c7c" kind="show" identifier="toDairyView" id="39h-WW-6ux"/>
                                 </connections>
                             </button>
@@ -1600,7 +1646,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="699-BV-KmV"/>
+                                    <action selector="zeroCaf:" destination="nkt-co-vCI" eventType="touchUpInside" id="xJE-2U-JQn"/>
+                                    <segue destination="oZx-El-LZu" kind="show" id="RwI-tE-At3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyOneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-hY-Gyf">
@@ -1613,7 +1660,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="eXy-3y-aQ8"/>
+                                    <action selector="oneCaf:" destination="nkt-co-vCI" eventType="touchUpInside" id="bPX-6B-ff6"/>
+                                    <segue destination="oZx-El-LZu" kind="show" id="8Ri-Tu-8jo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyTwoBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64e-WC-SUe">
@@ -1626,7 +1674,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="tSd-dw-29X"/>
+                                    <action selector="twoCaf:" destination="nkt-co-vCI" eventType="touchUpInside" id="CMo-ae-RjR"/>
+                                    <segue destination="oZx-El-LZu" kind="show" id="XPt-aH-oLg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyThreeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cm-J5-icB">
@@ -1639,7 +1688,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="6Vh-B4-xh4"/>
+                                    <action selector="threeCaf:" destination="nkt-co-vCI" eventType="touchUpInside" id="ApJ-yl-Im5"/>
+                                    <segue destination="oZx-El-LZu" kind="show" id="Jmr-0V-YfX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyFourBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL0-fr-LkW">
@@ -1652,7 +1702,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="J2k-1q-zcL"/>
+                                    <action selector="fourCaf:" destination="nkt-co-vCI" eventType="touchUpInside" id="oCy-R7-LT0"/>
+                                    <segue destination="oZx-El-LZu" kind="show" id="7Kz-ox-WLR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="coffeeDairyFiveBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV6-WC-BWy">
@@ -1662,7 +1713,8 @@
                                     <color key="titleColor" cyan="0.0" magenta="0.3717990451" yellow="0.23999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZx-El-LZu" kind="show" identifier="toDrinkView" id="hKR-dz-WYF"/>
+                                    <action selector="fiveCaf:" destination="nkt-co-vCI" eventType="touchUpInside" id="1oF-0S-0Pg"/>
+                                    <segue destination="oZx-El-LZu" kind="show" id="3BL-be-g0Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1711,8 +1763,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tds-Yu-QCn"/>
                     </view>
+                    <connections>
+                        <outlet property="fourDairy" destination="fL0-fr-LkW" id="6YO-zE-AX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oc2-Cv-DBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nkt-co-vCI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3789.5999999999999" y="-307.1964017991005"/>
         </scene>
@@ -1817,17 +1873,17 @@
         <image name="newPocketBarLogo" width="833" height="848"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="699-BV-KmV"/>
-        <segue reference="39h-WW-6ux"/>
+        <segue reference="8Ri-Tu-8jo"/>
+        <segue reference="S08-0J-9Rv"/>
         <segue reference="5SK-YZ-Lpx"/>
         <segue reference="PRM-ah-8SY"/>
         <segue reference="DQy-Iz-bhz"/>
         <segue reference="dol-bs-6ch"/>
         <segue reference="C3r-vy-mwj"/>
-        <segue reference="6Er-Tj-1xl"/>
-        <segue reference="ZYW-HL-n18"/>
-        <segue reference="wd7-Ue-s3X"/>
-        <segue reference="jTR-Vv-Pyg"/>
-        <segue reference="vbJ-pj-Lga"/>
+        <segue reference="z0u-ib-LND"/>
+        <segue reference="7BC-5H-m1Y"/>
+        <segue reference="1DR-8j-IRR"/>
+        <segue reference="WbI-Ug-uzB"/>
+        <segue reference="w9y-AM-Voi"/>
     </inferredMetricsTieBreakers>
 </document>

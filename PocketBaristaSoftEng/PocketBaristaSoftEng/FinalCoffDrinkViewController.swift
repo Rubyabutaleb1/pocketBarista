@@ -15,13 +15,49 @@ class FinalCoffDrinkViewController: UIViewController{
     @IBOutlet weak var finalCoffLabel1: UILabel!
     @IBOutlet weak var drinkIconImg: UIImageView!
     @IBOutlet weak var finalCoffLabel2: UILabel!
-    @IBAction func nextDrinkBtn(_ sender: UIBarButtonItem) {
+    @IBAction func nextDrinkBtn(_ sender: UIBarButtonItem)
+    {
         performSegue(withIdentifier: "anotherDrinkView", sender: nil)
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var caffeine = coffDrink.getCaff()
+        var temp = coffDrink.getTemp()
+        var dairy = coffDrink.getDairy()
+        
+        let coffeeURL = "http://yorbalindasoftware.com/barista/coffee?Temperature=" + String(temp) + "&Caffeine=" + String(caffeine) + "&Dairy=" + String(dairy)
+        
+        print(coffeeURL)
+        let url = URL(string: coffeeURL)
+        let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        let myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)
+                            as AnyObject
+                        print(myJson)
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

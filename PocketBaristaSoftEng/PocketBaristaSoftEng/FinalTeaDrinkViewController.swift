@@ -21,9 +21,42 @@ class FinalTeaDrinkViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let temp = teaDrink.getTemp()
+        let caffeine = teaDrink.getCaff()
+        let sweetness = teaDrink.getSweet()
+        let dairy = teaDrink.getDairy()
+        
+        let teaURL = "http://yorbalindasoftware.com/barista/tea?Temperature=" + String(temp) + "&Sweetness=" + String(sweetness) + "&Caffeine=" + String(caffeine) + "&Dairy=" + String(dairy)
+        print(teaURL)
+       
+        let url = URL(string: teaURL)
+        let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        let myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)
+                        as AnyObject
+                        print(myJson)
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+ 
     }
-    
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
